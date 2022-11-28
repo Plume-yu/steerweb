@@ -1,0 +1,39 @@
+option optimize_for = LITE_RUNTIME;
+package proto_hub;
+
+message RegisterReq {
+    required fixed32 server_id= 1;
+    repeated fixed32 event_sub= 2;
+}
+message RegisterAns {
+    required bool result= 1;
+    repeated fixed32 server_list= 2;
+}
+message SendMessageReq {
+    required fixed64 job_id= 1;
+    required fixed32 server_id= 2;
+    required bytes msg_buf= 3;
+}
+message SendMessageAns {
+    required fixed64 job_id= 1;
+    required fixed32 server_id= 2;
+    required fixed32 dest_count= 3;
+    required bool result= 4;
+}
+message RecvMessageReq {
+    required fixed32 server_id= 1;
+    required fixed64 job_id= 2;
+    required bytes msg_buf= 3;
+}
+message PingReq {
+}
+message PingAns {
+}
+message ServerEvent {
+    required fixed32 server_id= 1;
+    enum event_type {
+        CONNECTED= 0;
+        DISCONNECTED= 1;
+    }
+    required event_type event= 2;
+}

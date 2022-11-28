@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Steer>
+	<Message key="notice" value="Steer System.[nl]Пожалуйста, введите авторизованный идентификатор и пароль, чтобы войти в систему."/>
+	<Message key="productTitle" value="Secure TEra Executive Ruler"/>
+	<Message key="msg_01" value="Пароль не совпадает."/>
+	<Message key="msg_02" value="Пожалуйста, введите элемент."/>
+	<Message key="msg_03" value="Запрос. Пожалуйста, подождите."/>
+	<Message key="msg_04" value="Обработано нормально."/>
+	<Message key="msg_05" value="Вход в систему…"/>
+	<Message key="msg_06" value="Пожалуйста, введите идентификатор."/>
+	<Message key="msg_07" value="Пожалуйста, введите пароль."/>
+	<Message key="msg_08" value="Идет загрузка. Пожалуйста, подождите."/>
+	<Message key="msg_09" value=" вошел в систему."/>
+	<Message key="msg_10" value="Вы уверены, что хотите выйти из системы?"/>
+	<Message key="msg_11" value="У вас нет прав доступа. Обратитесь к администратору."/>
+	<Message key="msg_12" value="Быстрое меню не настроено."/>
+	<Message key="msg_13" value="Нет выбранного списка."/>
+	<Message key="msg_14" value="Пожалуйста, выберите элемент из списка или зарегистрированного меню."/>
+	<Message key="msg_15" value="Пожалуйста, выберите группу пользователей для добавления."/>
+	<Message key="msg_16" value="Пожалуйста, выберите пользователя для добавления."/>
+	<Message key="msg_17" value="Пожалуйста, выберите группу функций для добавления."/>
+	<Message key="msg_18" value="Пожалуйста, выберите функцию для добавления."/>
+	<Message key="msg_19" value="Пожалуйста, выберите группу отображения для добавления."/>
+	<Message key="msg_20" value=" пользователь будет удален. Продолжить?"/>
+	<Message key="msg_21" value=" пользователь удален."/>
+	<Message key="msg_22" value="Необходимая группа функций для подключения."/>
+	<Message key="msg_23" value="Необходимо ввести имя группы функций."/>
+	<Message key="msg_24" value=" группа пользователей будет удалена. Продолжить?"/>
+	<Message key="msg_25" value=" группа пользователей удалена."/>
+	<Message key="msg_26" value="Вы должны выбрать категорию сервера."/>
+	<Message key="msg_27" value=" функция будет удалена. Продолжить?"/>
+	<Message key="msg_28" value=" группа функций будет удалена. Продолжить?"/>
+	<Message key="msg_29" value=" группа отображения будет удалена. Продолжить?"/>
+	<Message key="msg_30" value="Из-за подготовки к дополнительному планированию, разработке и обсуждению ссылок функция приведения в настоящее время приостановлена."/>
+	<Message key="msg_31" value="Нет данных для экспорта."/>
+	<Message key="msg_32" value="Информация об экспорте данных:"/>
+	<Message key="msg_33" value="Вы можете скачать по ссылке ниже."/>
+	<Message key="msg_34" value="Количество включенных функций:"/>
+	<Message key="msg_35" value="Номер включенной группы функций:"/>
+	<Message key="msg_36" value="Номер включенной группы пользователей:"/>
+	<Message key="msg_37" value="Номер включенной группы отображения:"/>
+	<Message key="msg_38" value="После завершения загрузки файла здесь будут отображаться данные для импорта в файл."/>
+	<Message key="msg_39" value="После завершения загрузки файла здесь отобразятся результаты анализа и кнопка регистрации."/>
+	<Message key="msg_40" value="Неверное расширение файла для {file}. Разрешено только расширение {extensions}."/>
+	<Message key="msg_41" value="Превышен максимально допустимый размер файла. Максимально допустимый размер файла должен быть {sizeLimit}."/>
+	<Message key="msg_42" value="Ниже минимально допустимого размера файла. Допустимый минимальный размер файла должен быть {minSizeLimit}."/>
+	<Message key="msg_43" value="Файл {file} пуст. Загрузите его еще раз."/>
+	<Message key="msg_44" value="Выполняется загрузка файла. Загрузка будет отменена при переходе на другую страницу."/>
+	<Message key="msg_45" value="Загрузка файлов и анализ данных…"/>
+	<Message key="msg_46" value="Загрузка файла и анализ данных завершены."/>
+	<Message key="msg_47" value="Имя сохраненного файла в системе:"/>
+	<Message key="msg_48" value="Пожалуйста, проверьте результат анализа, прежде чем продолжить."/>
+	<Message key="msg_49" value="Добавить: номер функции [{0}] будет зарегистрирован."/>
+	<Message key="msg_50" value="Добавить: имя группы функций [{0}] будет зарегистрировано."/>
+	<Message key="msg_51" value="Добавить: группа функций - подключение функции [{0}] будет зарегистрировано."/>
+	<Message key="msg_52" value="Добавить: номер группы отображения [{0}] будет зарегистрирован."/>
+	<Message key="msg_53" value="Добавить: группа отображения - номер подключения функции [{0}] будет зарегистрирован."/>
+	<Message key="msg_54" value="Добавить: группа пользователей [{0}] будет зарегистрирована."/>
+	<Message key="msg_55" value="Изменить: номер функции [{0}] будет изменен."/>
+	<Message key="msg_56" value="Изменить: имя группы функций [{0}] будет изменено."/>
+	<Message key="msg_57" value="Изменить: группа функций - подключение функций [{0}] будет изменено."/>
+	<Message key="msg_58" value="Изменить: номер отображаемой группы [{0}] будет изменен."/>
+	<Message key="msg_59" value="Изменить: группа отображения - номер подключения функции [{0}] будет изменен."/>
+	<Message key="msg_60" value="Изменить: имя группы пользователей [{0}] будет изменено."/>
+	<Message key="msg_61" value="ImportType недействителен."/>
+	<Message key="msg_62" value="Предыдущие данные: {0}"/>
+	<Message key="msg_63" value="Зарегистрированные данные: {0}"/>
+	<Message key="msg_64" value="После запуска вы не можете отменить регистрацию. Продолжить?"/>
+	<Message key="msg_65" value="Произошла ошибка импорта. Повторите попытку после проверки кода ошибки."/>
+	<Message key="msg_66" value="Импорт завершен, все данные успешно зарегистрированы."/>
+	<Message key="msg_67" value="Регистрация данных…"/>
+	<Message key="msg_68" value="(Может быть сообщено о чрезмерной обработке скрипта или браузер перестанет отвечать в зависимости от размера импортируемых данных. Подождите некоторое время, чтобы проверить результат анализа.)"/>
+	<Message key="msg_69" value="Все добавленные и измененные группы функций и информация о подключении функций будут зарегистрированы в данных после сброса. Обязательно проверьте данные."/>
+	<Message key="msg_70" value="Без изменений: номер функции [{0}] уже зарегистрирован."/>
+	<Message key="msg_71" value="Без изменений: имя группы функций [{0}] уже зарегистрировано."/>
+	<Message key="msg_72" value="Без изменений: группа функций - подключение функций [{0}, {1}] уже зарегистрированы."/>
+	<Message key="msg_73" value="Без изменений: номер отображаемой группы [{0}] уже зарегистрирован."/>
+	<Message key="msg_74" value="Без изменений: группа отображения - номер подключения функции [{0}, {1}] уже зарегистрированы."/>
+	<Message key="msg_75" value="Без изменений: группа пользователей [{0}] уже зарегистрирована."/>
+	<Message key="msg_76" value="Загрузка файла и применение данных завершены."/>
+	<Message key="msg_77" value="Группа пользователей может быть связана только с одной группой функций."/>
+	<Message key="msg_78" value="Группа пользователей может быть связана только с одной группой проверки."/>
+	<Message key="msg_79" value="Пожалуйста, введите название отображаемой группы."/>
+	<Message key="msg_80" value="Тип группы отображения: 1 ~ 127."/>
+	<Message key="msg_81" value="Порядок отображения: 1 ~ 127."/>
+	<Message key="msg_82" value="Пожалуйста, введите имя службы."/>
+	<Message key="msg_83" value="Номер функции: 1 ~ 16777216."/>
+	<Message key="msg_84" value="Уровень опасности 1 ~ 127."/>
+	<Message key="msg_85" value="Значение характеристики сортировки функции: 1 ~ 127."/>
+	<Message key="msg_86" value="Пожалуйста, введите имя функции."/>
+	<Message key="msg_87" value="Пожалуйста, введите отображаемое имя функции."/>
+	<Message key="msg_88" value="Вы не можете использовать специальные символы."/>
+	<Message key="text_01" value="Результат запроса"/>
+	<Message key="text_02" value="ОК"/>
+	<Message key="text_03" value="Отмена"/>
+	<Message key="text_04" value="Меню"/>
+	<Message key="text_05" value="Ошибка ввода"/>
+	<Message key="text_06" value="Создать"/>
+	<Message key="text_07" value="Ошибка"/>
+	<Message key="text_08" value="Изменить"/>
+	<Message key="text_09" value="Удалить"/>
+	<Message key="text_10" value="Отменить каст"/>
+	<Message key="text_11" value="Выполнить каст"/>
+	<Message key="text_12" value="Отклонить каст"/>
+	<Message key="text_13" value="Доверить каст"/>
+	<Message key="text_14" value="Создать каст"/>
+	<Message key="text_15" value="Уведомление"/>
+	<Message key="text_16" value="Войти"/>
+	<Message key="text_17" value="Опция"/>
+	<Message key="text_18" value="Сохранить информацию об учетной записи"/>
+	<Message key="text_19" value="Войти"/>
+	<Message key="text_20" value="Вкл."/>
+	<Message key="text_21" value="Выкл."/>
+	<Message key="text_22" value="Быстрое меню"/>
+	<Message key="text_23" value="Выйти"/>
+	<Message key="text_24" value="Начало"/>
+	<Message key="text_25" value="Назад"/>
+	<Message key="text_26" value="Вперед"/>
+	<Message key="text_27" value="Конец"/>
+	<Message key="text_28" value="Исполняемая функция"/>
+	<Message key="text_29" value="Кастуемая функция"/>
+	<Message key="text_30" value="Поиск"/>
+	<Message key="text_31" value="Все"/>
+	<Message key="text_32" value="Добавить подключение группы пользователей"/>
+	<Message key="text_33" value="Добавить"/>
+	<Message key="text_34" value="Добавить подключение пользователя"/>
+	<Message key="text_35" value="Добавить подключение группы функций"/>
+	<Message key="text_36" value="Добавить подключение к функции"/>
+	<Message key="text_37" value="Добавить подключение к группе отображения"/>
+	<Message key="text_38" value="Подключенная группа пользователей"/>
+	<Message key="text_39" value="Подключенная группа функций"/>
+	<Message key="text_40" value="Подключенная группа проверки"/>
+	<Message key="text_41" value="Подключенная функция"/>
+	<Message key="text_42" value="Пароль"/>
+	<Message key="text_43" value="Имя пользователя"/>
+	<Message key="text_44" value="Статус пользователя"/>
+	<Message key="text_45" value="Дублированный вход"/>
+	<Message key="text_46" value="Идет загрузка…"/>
+	<Message key="text_47" value="Идентификатор пользователя"/>
+	<Message key="text_48" value="Пароль пользователя"/>
+	<Message key="text_49" value="Подтвердите пароль пользователя"/>
+	<Message key="text_50" value="Подтвердить запрос"/>
+	<Message key="text_51" value="Обновить"/>
+	<Message key="text_52" value=" секунд"/>
+	<Message key="text_53" value="Уровень опасности"/>
+	<Message key="text_54" value=" или больше"/>
+	<Message key="text_55" value="Конфигурация и поиск"/>
+	<Message key="text_56" value="Группа функций для подключения"/>
+	<Message key="text_57" value="Сброс"/>
+	<Message key="text_58" value="Конфигурация"/>
+	<Message key="text_59" value="Полученый каст"/>
+	<Message key="text_60" value="Доверенный каст"/>
+	<Message key="text_61" value="Имя группы пользователей"/>
+	<Message key="text_62" value="Проверить группу пользователей для подключения"/>
+	<Message key="text_63" value="Выберите категорию сервера"/>
+	<Message key="text_64" value="Номер функции"/>
+	<Message key="text_65" value="Имя функции"/>
+	<Message key="text_66" value="Использование"/>
+	<Message key="text_67" value="Уровень опасности"/>
+	<Message key="text_68" value="Требуется сеанс"/>
+	<Message key="text_69" value="Выполнить список параметров"/>
+	<Message key="text_70" value="Список результатов"/>
+	<Message key="text_71" value="Описание функции"/>
+	<Message key="text_72" value="Отображаемое имя функции"/>
+	<Message key="text_73" value="Значение признака сортировки функции"/>
+	<Message key="text_74" value="Имя группы функций"/>
+	<Message key="text_75" value="Отображаемое имя группы"/>
+	<Message key="text_76" value="Отображать тип группы"/>
+	<Message key="text_77" value="Порядок отображения"/>
+	<Message key="text_78" value="Дополнительная отображаемая информация"/>
+	<Message key="text_79" value="Имя службы"/>
+	<Message key="text_80" value="Уведомление"/>
+	<Message key="text_81" value="Все"/>
+	<Message key="text_82" value="По категории сервера"/>
+	<Message key="text_83" value="По периоду"/>
+	<Message key="text_84" value="По пользователю"/>
+	<Message key="text_85" value="По группе пользователей"/>
+	<Message key="text_86" value=" ~"/>
+	<Message key="text_87" value="Загрузить выбранный список"/>
+	<Message key="text_88" value="Список функций"/>
+	<Message key="text_89" value="Список групп функций"/>
+	<Message key="text_90" value="Список групп пользователей"/>
+	<Message key="text_91" value="Добавить в список экспорта"/>
+	<Message key="text_92" value="Сброс"/>
+	<Message key="text_93" value="Загрузка файла"/>
+	<Message key="text_94" value="Показать список групп"/>
+	<Message key="text_95" value="Загрузка файла"/>
+	<Message key="text_96" value="Импортировать данные"/>
+	<Message key="text_97" value="Начать регистрацию данных"/>
+	<Message key="text_98" value="Файл функций"/>
+	<Message key="text_99" value="Показать групповой файл"/>
+	<Message key="PaneText_1" value="Список исполняемых/кастуемых функций"/>
+	<Message key="PaneText_2" value="Список категорий серверов"/>
+	<Message key="PaneText_3" value="Просмотр списка пользователей"/>
+	<Message key="PaneText_4" value="Просмотр списка групп пользователей"/>
+	<Message key="PaneText_5" value="Просмотр списка функций"/>
+	<Message key="PaneText_6" value="Просмотр списка групп функций"/>
+	<Message key="PaneText_7" value="Просмотр списка групп отображения"/>
+	<Message key="PaneText_8" value="Подключить пользователя к группе пользователей"/>
+	<Message key="PaneText_9" value="Группа пользователей, содержащая пользователя {0}"/>
+	<Message key="PaneText_10" value="Просмотр сведений о пользователе"/>
+	<Message key="PaneText_11" value="Подключить группу пользователей к пользователю"/>
+	<Message key="PaneText_12" value="Список пользователей, принадлежащих к группе пользователей {0}"/>
+	<Message key="PaneText_13" value="Подключить функцию выполнения к группе функций"/>
+	<Message key="PaneText_14" value="Список групп функций, содержащий функцию выполнения {0}"/>
+	<Message key="PaneText_15" value="Подключить группу функций к функции выполнения"/>
+	<Message key="PaneText_16" value="Выполнить список функций, принадлежащих группе функций {0}"/>
+	<Message key="PaneText_17" value="Просмотр сведений о группе пользователей"/>
+	<Message key="PaneText_18" value="Просмотр сведений о функции"/>
+	<Message key="PaneText_19" value="Просмотр сведений о группе функций"/>
+	<Message key="PaneText_20" value="Просмотр сведений о группе отображения"/>
+	<Message key="PaneText_21" value="Подключение функции каста к группе функций"/>
+	<Message key="PaneText_22" value="Список групп функций, содержащий функцию каста {0}"/>
+	<Message key="PaneText_23" value="Подключить группу функций к функции каста"/>
+	<Message key="PaneText_24" value="Список функций каста, который принадлежит группе функций {0}"/>
+	<Message key="PaneText_25" value="Подключить функцию к группе отображения"/>
+	<Message key="PaneText_26" value="Показать список групп, содержащий функцию {0}"/>
+	<Message key="PaneText_27" value="Подключение группы отображения к функции"/>
+	<Message key="PaneText_28" value="Список функций, который принадлежит группе отображения {0}"/>
+	<Message key="PaneText_29" value="Обработанный список каста"/>
+	<Message key="PaneText_30" value="Список состояний серверов"/>
+	<Message key="PaneText_31" value="Создать пользователя"/>
+	<Message key="PaneText_32" value="Проверить список журналов"/>
+	<Message key="PaneText_33" value="Список доступа к серверу"/>
+	<Message key="PaneText_34" value="Полученный/доверенный список каста"/>
+	<Message key="PaneText_35" value="Создать группу пользователей"/>
+	<Message key="PaneText_36" value="Создать функцию"/>
+	<Message key="PaneText_37" value="Создать группу функций"/>
+	<Message key="PaneText_38" value="Создать группу отображения"/>
+	<Message key="PaneText_39" value="Список журнала действий"/>
+	<Message key="PaneText_40" value="Просмотр подробности журнала действий"/>
+	<Message key="PaneText_41" value="Изменить мою информацию"/>
+	<Message key="PaneText_42" value="Экспорт данных"/>
+	<Message key="PaneText_43" value="Импорт данных"/>
+	<Message key="PaneText_44" value="Импорт языковых данных"/>
+	<Message key="header_01" value="Создать пользователя"/>
+	<Message key="header_02" value="Создать функцию"/>
+	<Message key="header_03" value="Настроить сервер вызова функции"/>
+	<Message key="header_04" value="Создать группу функций"/>
+	<Message key="header_05" value="Сопоставление групп функций"/>
+	<Message key="header_06" value="Создать группу пользователей"/>
+	<Message key="header_07" value="Сопоставление групп пользователей"/>
+	<Message key="header_08" value="Удалить сопоставление групп функций"/>
+	<Message key="header_09" value="Удалить сопоставление групп пользователей"/>
+	<Message key="header_10" value="Изменить функцию"/>
+	<Message key="header_11" value="Изменить группу функций"/>
+	<Message key="header_12" value="Изменить пользователя"/>
+	<Message key="header_13" value="Изменить группу пользователей"/>
+	<Message key="header_14" value="Изменить мою информацию"/>
+	<Message key="header_15" value="Создать каст"/>
+	<Message key="header_16" value="Отменить каст"/>
+	<Message key="header_17" value="Выполнить функцию каста"/>
+	<Message key="header_18" value="Отклонить каст"/>
+	<Message key="header_19" value="Доверить каст"/>
+	<Message key="datatable_01" value="Данные не существуют."/>
+	<Message key="datatable_02" value="Произошла внутренняя ошибка."/>
+	<Message key="datatable_03" value="Загрузка данных…"/>
+	<Message key="datatable_04" value="Нажмите для сортировки по возрастанию"/>
+	<Message key="datatable_05" value="Нажмите для сортировки по убыванию"/>
+	<Message key="err_nocode" value="Сообщение с определенным кодом ошибки не существует."/>
+	<Message key="err_16778215" value="Сессия STEER истекла. Пожалуйста, войдите снова."/>
+	<Message key="err_16778216" value="Не удается подключиться к системе STEER. Проверьте состояние сервера."/>
+	<Message key="err_16778217" value="Во время связи возникло препятствие. Пожалуйста, проверьте состояние сервера."/>
+	<Message key="err_16778218" value="У вас нет прав доступа. Обратитесь к администратору."/>
+	<Message key="err_16778219" value="Неизвестная ошибка. Обратитесь к администратору."/>
+	<Message key="err_16778220" value="У вас нет полномочий. Обратитесь к администратору."/>
+	<Message key="err_16778221" value="Неверные данные локализации. Обратитесь к администратору."/>
+	<Message key="err_16778222" value="Неверные данные. Обратитесь к администратору."/>
+	<Message key="err_16778223" value="Произошла исключительная ситуация. Пожалуйста, свяжитесь с администратором."/>
+	<Message key="err_33554436" value="Сервер не подключен."/>
+	<Message key="err_33554437" value="Превышен лимит времени передачи данных"/>
+	<Message key="err_83885830" value="Произошла ошибка базы данных."/>
+	<Message key="err_83886080" value="Обработано нормально."/>
+	<Message key="err_83886180" value="Идентификатор или пароль не совпадают."/>
+	<Message key="err_83886280" value="У вас нет полномочий или функция не настроена для типа выполнения"/>
+	<Message key="err_83886281" value="Группа пользователей инертна"/>
+	<Message key="err_83886282" value="Группа функций инертна"/>
+	<Message key="err_83886283" value="Функция инертна"/>
+	<Message key="err_83886284" value="Целевая группа не имеет полномочий для выполнения функции или имеет проблемы с функцией."/>
+	<Message key="err_83886285" value="Тип вызова функции не определен"/>
+	<Message key="err_83886286" value="У вас нет полномочий или функция не настроена для типа приведения"/>
+	<Message key="err_83886287" value="Статус каста либо изменен, либо не принадлежит целевой группе каста"/>
+	<Message key="err_83886288" value="Статус каста либо изменен, либо каст не существует"/>
+	<Message key="err_83886289" value="Не принадлежит к группе проверки"/>
+	<Message key="err_83886290" value="Целевые данные не существуют"/>
+	<Message key="err_83886291" value="Дубликат входа в систему. Предыдущий сеанс входа завершен."/>
+	<Message key="err_83886292" value="Срок действия сеанса истек."/>
+	<Message key="err_83886293" value="IP-адрес клиента изменен. Пожалуйста, войдите снова."/>
+	<Message key="err_83886294" value="Учетная запись уже существует."/>
+	<Message key="err_83886295" value="Пользователь не может войти в систему."/>
+	<Message key="err_167771910" value="Произошла ошибка базы данных."/>
+	<Message key="col_actionLogIDint" value="Число"/>
+	<Message key="col_actionMemo" value="Заметка"/>
+	<Message key="col_actionTime" value="Время"/>
+	<Message key="col_actionType" value="Тип действия"/>
+	<Message key="col_actionUserIDint" value="Пользователь"/>
+	<Message key="col_activityTime" value="Отчетное время"/>
+	<Message key="col_allowMultipleLoginFlag" value="Дублирование входа разрешено"/>
+	<Message key="col_arguments" value="Параметр"/>
+	<Message key="col_auditorUserGroupIDint" value="Группа доверия"/>
+	<Message key="col_auditorUserGroupName" value="Доверить имя группы"/>
+	<Message key="col_auditorUserIDint" value="Доверитель"/>
+	<Message key="col_calleeServerType" value="Тип сервера"/>
+	<Message key="col_callerServerType" value="Тип вызывающего сервера"/>
+	<Message key="col_castComment" value="Комментарий"/>
+	<Message key="col_casterUserIDint" value="Кастер"/>
+	<Message key="col_casterUserIDstr" value="Кастер"/>
+	<Message key="col_castIDint" value="Каст"/>
+	<Message key="col_castState" value="Статус"/>
+	<Message key="col_castTargetUserGroupIDint" value="Целевая группа пользователей"/>
+	<Message key="col_castTargetUserGroupIDstr" value="Целевая группа пользователей"/>
+	<Message key="col_dangerLevel" value="Уровень опасности"/>
+	<Message key="col_displayName" value="Отображаемое имя"/>
+	<Message key="col_displaySortOrder" value="Заказ"/>
+	<Message key="col_executeUserGroupIDint" value="Выполнить группу пользователей"/>
+	<Message key="col_executionTime" value="Время выполнения"/>
+	<Message key="col_executorUserIDint" value="Выполнить пользователя"/>
+	<Message key="col_functionDescription" value="Описание функции"/>
+	<Message key="col_functionGroupIDint" value="Группа функций"/>
+	<Message key="col_functionGroupName" value="Имя группы функций"/>
+	<Message key="col_functionGroupUseFlag" value="Использование"/>
+	<Message key="col_functionIDint" value="Номер функции"/>
+	<Message key="col_functionName" value="Имя функции"/>
+	<Message key="col_functionUseFlag" value="Использование"/>
+	<Message key="col_globalUniqueFunctionIDint" value="GUFID"/>
+	<Message key="col_globalUniqueServerIDint" value="GUSID"/>
+	<Message key="col_infoInt1" value="Информационное поле 1"/>
+	<Message key="col_infoInt2" value="Информационное поле 2"/>
+	<Message key="col_infoText" value="Информационный текст"/>
+	<Message key="col_lastUpdateTime" value="Время последнего изменения"/>
+	<Message key="col_previousCastIDint" value="Предыдущий каст"/>
+	<Message key="col_requireSessionFlag" value="Требуется сеанс"/>
+	<Message key="col_results" value="Результаты"/>
+	<Message key="col_serverType" value="Тип сервера"/>
+	<Message key="col_userGroupIDint" value="Число"/>
+	<Message key="col_userGroupName" value="Имя группы"/>
+	<Message key="col_userGroupUseFlag" value="Использование"/>
+	<Message key="col_userIDint" value="Номер пользователя"/>
+	<Message key="col_userIDstr" value="Пользователь"/>
+	<Message key="col_userName" value="Имя пользователя"/>
+	<Message key="col_userState" value="Статус пользователя"/>
+	<Message key="col_categoryIDint" value="Число"/>
+	<Message key="col_serverName" value="Имя сервера"/>
+	<Message key="col_description" value="Описание"/>
+	<Message key="col_displayGroupIDint" value="Число"/>
+	<Message key="col_displayGroupName" value="Имя группы"/>
+	<Message key="col_displayGroupUseFlag" value="Использование"/>
+	<Message key="col_displayGroupType" value="Тип группы"/>
+	<Message key="col_displayOrder" value="Порядок главного меню"/>
+	<Message key="col_displayAdditionalInfo" value="Дополнительная информация"/>
+	<Message key="col_serviceName" value="Имя службы"/>
+	<Message key="col_displaySubOrder" value="Подзаказ"/>
+	<Message key="col_displayFunctionAdditionalInfo" value="Дополнительная информация"/>
+	<Message key="col_serverNumber" value="Номер сервера"/>
+	<Message key="col_sendCount" value="Количество отправленных"/>
+	<Message key="col_receiveCount" value="Количество полученных"/>
+	<Message key="col_connectTime" value="Время соединения"/>
+	<Message key="code_actionType_1" value="Выполнить"/>
+	<Message key="code_actionType_2" value="Каст"/>
+	<Message key="code_actionType_3" value="Отчет"/>
+	<Message key="code_allowMultipleLoginFlag_0" value="Недоступно"/>
+	<Message key="code_allowMultipleLoginFlag_1" value="Доступно"/>
+	<Message key="code_castState_1" value="Продолжить"/>
+	<Message key="code_castState_2" value="Завершено"/>
+	<Message key="code_castState_3" value="Отклонить"/>
+	<Message key="code_castState_4" value="Доверить"/>
+	<Message key="code_castState_5" value="Отмена"/>
+	<Message key="code_displayGroupType_1" value="Верхнее меню"/>
+	<Message key="code_displayGroupType_2" value="Боковое меню"/>
+	<Message key="code_displayGroupUseFlag_0" value="Не используется"/>
+	<Message key="code_displayGroupUseFlag_1" value="Используется"/>
+	<Message key="code_executionState_1" value="Попытка"/>
+	<Message key="code_executionState_2" value="Успех"/>
+	<Message key="code_executionState_3" value="Ошибка"/>
+	<Message key="code_functionGroupUseFlag_0" value="Не используется"/>
+	<Message key="code_functionGroupUseFlag_1" value="Используется"/>
+	<Message key="code_functionUseFlag_0" value="Не используется"/>
+	<Message key="code_functionUseFlag_1" value="Используется"/>
+	<Message key="code_requireSessionFlag_0" value="Не требуется"/>
+	<Message key="code_requireSessionFlag_1" value="Обязательный"/>
+	<Message key="code_serverType_0" value="ArbiterGW"/>
+	<Message key="code_serverType_1" value="SteerWeb"/>
+	<Message key="code_serverType_10" value="SteerSession"/>
+	<Message key="code_serverType_11" value="GameAdminTool"/>
+	<Message key="code_serverType_12" value="SteerBridge"/>
+	<Message key="code_serverType_13" value="HubGW"/>
+	<Message key="code_serverType_14" value="CardMaker"/>
+	<Message key="code_serverType_15" value="CardDealer"/>
+	<Message key="code_serverType_16" value="Box"/>
+	<Message key="code_serverType_17" value="BoxBridge"/>
+	<Message key="code_serverType_18" value="DBGW"/>
+	<Message key="code_serverType_19" value="WebCSTool"/>
+	<Message key="code_serverType_2" value="SteerGW"/>
+	<Message key="code_serverType_20" value="CardSteerBridge"/>
+	<Message key="code_serverType_3" value="SteerHUB"/>
+	<Message key="code_serverType_4" value="SteerMind"/>
+	<Message key="code_serverType_5" value="SteerDB"/>
+	<Message key="code_serverType_6" value="GAS"/>
+	<Message key="code_serverType_7" value="GlogDB"/>
+	<Message key="code_serverType_8" value="SteerClient"/>
+	<Message key="code_serverType_9" value="SteerCast"/>
+	<Message key="code_serverType_32" value="Dice"/>
+	<Message key="code_userGroupUseFlag_0" value="Не используется"/>
+	<Message key="code_userGroupUseFlag_1" value="Используется"/>
+	<Message key="code_userState_1" value="Используется"/>
+	<Message key="code_userState_0" value="Не используется"/>
+	<Message key="code_userState_2" value="Ограничено"/>
+</Steer>

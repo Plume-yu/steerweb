@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Steer>
+    <Message key="notice" value="로그인은 아이디, 패스워드를 입력하세요. [nl]권한이 등록되어 있어야 합니다. 등록은 관리자에게 문의하세요. [nl][nl]STEER 시스템은 Firefox 9.0.1, 10, 13.0.1 버젼을 지원합니다. [nl]InternetExplorer 및 기타 브라우저에서는 정상 동작을 보장하지 않습니다."/>
+    <Message key="productTitle" value="Secure TEra Executive Ruler"/>
+
+    <Message key="msg_01" value="패스워드가 일치하지 않습니다."/>
+    <Message key="msg_02" value="항목을 입력 해 주세요."/>
+    <Message key="msg_03" value="요청중입니다. 잠시만 기다려 주세요."/>
+    <Message key="msg_04" value="정상적으로 처리되었습니다."/>
+    <Message key="msg_05" value=" 로그인 중..."/>
+    <Message key="msg_06" value="아이디를 입력 해 주세요."/>
+    <Message key="msg_07" value="패스워드를 입력 해 주세요."/>
+    <Message key="msg_08" value="로딩중입니다. 잠시만 기다려 주세요."/>
+    <Message key="msg_09" value=" 님이 접속하셨습니다."/>
+    <Message key="msg_10" value="로그아웃 하시겠습니까?"/>
+    <Message key="msg_11" value="사용 가능한 권한이 없습니다. 관리자에게 문의하세요."/>
+    <Message key="msg_12" value="퀵 메뉴가 설정되어 있지 않습니다."/>
+    <Message key="msg_13" value="선택된 목록이 없습니다."/>
+    <Message key="msg_14" value="리스트에서 선택하거나 등록 메뉴를 선택 해 주세요."/>
+    <Message key="msg_15" value="추가할 사용자 그룹을 선택 해 주세요."/>
+    <Message key="msg_16" value="추가할 사용자를 선택 해 주세요."/>
+    <Message key="msg_17" value="추가할 기능 그룹을 선택 해 주세요."/>
+    <Message key="msg_18" value="추가할 기능을 선택 해 주세요."/>
+    <Message key="msg_19" value="추가할 디스플레이 그룹을 선택 해 주세요."/>
+    <Message key="msg_20" value=" 번 사용자를 삭제하시겠습니까?"/>
+    <Message key="msg_21" value=" 번 사용자가 삭제되었습니다."/>
+    <Message key="msg_22" value="연결될 기능 그룹이 필요합니다."/>
+    <Message key="msg_23" value="기능 그룹 이름을 입력해야 합니다."/>
+    <Message key="msg_24" value=" 번 사용자 그룹을 삭제하시겠습니까?"/>
+    <Message key="msg_25" value=" 번 사용자 그룹이 삭제되었습니다."/>
+    <Message key="msg_26" value="서버 카테고리를 선택하셔야 합니다."/>
+    <Message key="msg_27" value=" 번 기능을 삭제하시겠습니까?"/>
+    <Message key="msg_28" value=" 번 기능 그룹을 삭제하시겠습니까?"/>
+    <Message key="msg_29" value=" 번 디스플레이 그룹을 삭제하시겠습니까?"/>
+    <Message key="msg_30" value="캐스트 기능은 추가적인 기획, 개발, 연동 논의가 준비중인 상황으로 현재 보류중입니다."/>
+    <Message key="msg_31" value="내보내기 할 데이터가 없습니다."/>
+    <Message key="msg_32" value="내보내기 데이터의 정보는 다음과 같습니다."/>
+    <Message key="msg_33" value="아래 링크를 통해 다운로드 받으실 수 있습니다."/>
+    <Message key="msg_34" value="포함된 기능 수:"/>
+    <Message key="msg_35" value="포함된 기능 그룹 수:"/>
+    <Message key="msg_36" value="포함된 사용자 그룹 수:"/>
+    <Message key="msg_37" value="포함된 디스플레이 그룹 수:"/>
+    <Message key="msg_38" value="파일 업로드가 완료되면, 파일 내 가져오기 할 데이터가 이곳에 표시됩니다."/>
+    <Message key="msg_39" value="파일 업로드 완료 후 분석 결과와 등록 버튼이 이곳에 표시됩니다."/>
+    <Message key="msg_40" value="{file} 파일의 확장자가 잘못되었습니다. 오직 {extensions} 형식의 파일만 허용됩니다."/>
+    <Message key="msg_41" value="{file} 파일의 최대 허용 크기를 초과하였습니다. 파일의 최대 허용 크기는 {sizeLimit} 입니다."/>
+    <Message key="msg_42" value="{file} 파일의 최소 허용 크기 미만입니다. 파일의 최소 크기는 {minSizeLimit} 입니다."/>
+    <Message key="msg_43" value="{file} 파일이 비었습니다. 다시 업로드 해 주세요."/>
+    <Message key="msg_44" value="현재 파일이 업로드 중 입니다. 페이지를 벗어날 경우 파일 업로드가 취소됩니다." />
+    <Message key="msg_45" value="파일 업로드 및 데이터 분석작업 진행중..."/>
+    <Message key="msg_46" value="파일 업로드가 완료되었으며, 데이터에 대한 분석작업이 완료되었습니다."/>
+    <Message key="msg_47" value="시스템 내 저장된 해당 파일 이름: "/>
+    <Message key="msg_48" value="반드시 분석 정보를 확인한 후 진행 해 주시기 바랍니다."/>
+    <Message key="msg_49" value="추가: 기능 [{0}]번이 새로 등록됩니다."/>
+    <Message key="msg_50" value="추가: 기능 그룹 이름 [{0}]이 새로 등록됩니다."/>
+    <Message key="msg_51" value="추가: 기능 그룹 - 기능 연결 [{0}]이 새로 등록됩니다."/>
+    <Message key="msg_52" value="추가: 디스플레이 그룹 [{0}]번이 새로 등록됩니다."/>
+    <Message key="msg_53" value="추가: 디스플레이 그룹 - 기능 연결 [{0}]번이 새로 등록됩니다."/>
+    <Message key="msg_54" value="추가: 유저 그룹 이름 [{0}]이 새로 등록됩니다."/>
+    <Message key="msg_55" value="변경: 기능 [{0}]번이 변경됩니다."/>
+    <Message key="msg_56" value="변경: 기능 그룹 이름 [{0}]이 변경됩니다."/>
+    <Message key="msg_57" value="변경: 기능 그룹 - 기능 연결 [{0}]이 변경됩니다."/>
+    <Message key="msg_58" value="변경: 디스플레이 그룹 [{0}]번이 변경됩니다."/>
+    <Message key="msg_59" value="변경: 디스플레이 그룹 - 기능 연결 [{0}]번이 변경됩니다."/>
+    <Message key="msg_60" value="변경: 유저 그룹 이름 [{0}]이 변경됩니다."/>
+    <Message key="msg_61" value="ImportType 이 잘못되었습니다."/>
+    <Message key="msg_62" value="이전 데이터: {0}"/>
+    <Message key="msg_63" value="등록 데이터: {0}"/>
+    <Message key="msg_64" value="등록 작업 시작 후 취소 할 수 없습니다. 계속하시겠습니까?"/>
+    <Message key="msg_65" value="가져오기 중 장애가 발생하였습니다. 오류 코드를 확인 하시고 다시 시도 해 주세요."/>
+    <Message key="msg_66" value="가져오기가 완료되었으며, 모든 데이터가 성공적으로 등록되었습니다."/>
+    <Message key="msg_67" value="데이터 등록중..."/>
+    <Message key="msg_68" value="(가져오기 데이터 크기에 따라 스크립트 처리량이 많다고 리포팅 되거나 브라우져의 응답이 없더라도 기다리시면 분석 결과 확인이 가능합니다.)"/>
+    <Message key="msg_69" value="추가되거나 변경되는 기능 그룹과 기능의 연결 정보는 모두 초기화 후 파일의 데이터로 등록 됩니다. 반드시 데이터를 확인 하시기 바랍니다."/>
+    <Message key="msg_70" value="변경 없음: 기능 [{0}]번은 이미 등록되어 있습니다."/>
+    <Message key="msg_71" value="변경 없음: 기능 그룹 이름 [{0}]은 이미 등록되어 있습니다."/>
+    <Message key="msg_72" value="변경 없음: 기능 그룹 - 기능 연결 [{0},{1}]은 이미 등록되어 있습니다."/>
+    <Message key="msg_73" value="변경 없음: 디스플레이 그룹 [{0}]번은 이미 등록되어 있습니다."/>
+    <Message key="msg_74" value="변경 없음: 디스플레이 그룹 - 기능 연결 [{0},{1}]번은 이미 등록되어 있습니다."/>
+    <Message key="msg_75" value="변경 없음: 유저 그룹 이름 [{0}]은 이미 등록되어 있습니다."/>
+    <Message key="msg_76" value="파일 업로드 및 데이터 적용이 완료되었습니다."/>
+    <Message key="msg_77" value="사용자 그룹은 하나의 기능 그룹으로만 연결 할 수 있습니다."/>
+    <Message key="msg_78" value="사용자 그룹은 하나의 감사 그룹으로만 연결 할 수 있습니다."/>
+    <Message key="msg_79" value="디스플레이 그룹 이름을 입력 해 주세요."/>
+    <Message key="msg_80" value="디스플레이 그룹 종류는 1 ~ 127 까지입니다."/>
+    <Message key="msg_81" value="디스플레이 순서는 1 ~ 127 까지입니다."/>
+    <Message key="msg_82" value="서비스 이름을 입력 해 주세요."/>
+    <Message key="msg_83" value="기능 번호는 1 ~ 16777216 까지입니다."/>
+    <Message key="msg_84" value="위험도는 1 ~ 127 까지입니다."/>
+    <Message key="msg_85" value="기능 정렬 고유값이 잘못되었습니다."/>
+    <Message key="msg_86" value="기능 이름을 입력 해 주세요."/>
+    <Message key="msg_87" value="기능 표시 이름을 입력 해 주세요."/>
+    <Message key="msg_88" value="입력에 특수문자를 사용 할 수 없습니다."/>
+    
+    <Message key="text_01" value="요청 결과"/>
+    <Message key="text_02" value="확인"/>
+    <Message key="text_03" value="취소"/>
+    <Message key="text_04" value="메뉴"/>
+    <Message key="text_05" value="입력오류"/>
+    <Message key="text_06" value="생성"/>
+    <Message key="text_07" value="오류"/>
+    <Message key="text_08" value="수정"/>
+    <Message key="text_09" value="제거"/>
+    <Message key="text_10" value="캐스트 취소"/>
+    <Message key="text_11" value="캐스트 수행"/>
+    <Message key="text_12" value="캐스트 거부"/>
+    <Message key="text_13" value="캐스트 위임"/>
+    <Message key="text_14" value="캐스트 생성"/>
+    <Message key="text_15" value="공지사항"/>
+    <Message key="text_16" value="로그인"/>
+    <Message key="text_17" value="옵션"/>
+    <Message key="text_18" value="계정정보 저장"/>
+    <Message key="text_19" value="로그인"/>
+    <Message key="text_20" value="켜짐"/>
+    <Message key="text_21" value="꺼짐"/>
+    <Message key="text_22" value="퀵메뉴"/>
+    <Message key="text_23" value="로그아웃"/>
+    <Message key="text_24" value="처음"/>
+    <Message key="text_25" value="이전"/>
+    <Message key="text_26" value="다음"/>
+    <Message key="text_27" value="끝"/>
+    <Message key="text_28" value="실행 가능 기능"/>
+    <Message key="text_29" value="캐스트 가능 기능"/>
+    <Message key="text_30" value="검색"/>
+    <Message key="text_31" value="모두"/>
+    <Message key="text_32" value="사용자 그룹 연결 추가"/>
+    <Message key="text_33" value="추가"/>
+    <Message key="text_34" value="사용자 연결 추가"/>
+    <Message key="text_35" value="기능 그룹 연결 추가"/>
+    <Message key="text_36" value="기능 연결 추가"/>
+    <Message key="text_37" value="디스플레이 그룹 연결 추가"/>
+    <Message key="text_38" value="연결된 사용자 그룹"/>
+    <Message key="text_39" value="연결된 기능 그룹"/>
+    <Message key="text_40" value="연결된 감사 그룹"/>
+    <Message key="text_41" value="연결된 기능"/>
+    <Message key="text_42" value="비밀번호"/>
+    <Message key="text_43" value="사용자 이름"/>
+    <Message key="text_44" value="사용자 상태"/>
+    <Message key="text_45" value="중복 로그인 사용 여부"/>
+    <Message key="text_46" value="로드 중..."/>
+    <Message key="text_47" value="사용자 아이디"/>
+    <Message key="text_48" value="사용자 비밀번호"/>
+    <Message key="text_49" value="사용자 비밀번호 확인"/>
+    <Message key="text_50" value="요청 확인"/>
+    <Message key="text_51" value="새로고침"/>
+    <Message key="text_52" value="초"/>
+    <Message key="text_53" value="위험도"/>
+    <Message key="text_54" value="이상"/>
+    <Message key="text_55" value="설정 및 검색"/>
+    <Message key="text_56" value="연결할 기능 그룹"/>
+    <Message key="text_57" value="초기화"/>
+    <Message key="text_58" value="설정"/>
+    <Message key="text_59" value="받은 캐스트"/>
+    <Message key="text_60" value="위임 가능 캐스트"/>
+    <Message key="text_61" value="사용자 그룹 이름"/>
+    <Message key="text_62" value="연결할 감사 사용자 그룹"/>
+    <Message key="text_63" value="서버 카테고리 선택"/>
+    <Message key="text_64" value="기능 번호"/>
+    <Message key="text_65" value="기능 이름"/>
+    <Message key="text_66" value="사용 여부"/>
+    <Message key="text_67" value="위험도"/>
+    <Message key="text_68" value="세션 필요 여부"/>
+    <Message key="text_69" value="실행 파라미터 리스트"/>
+    <Message key="text_70" value="결과 리스트"/>
+    <Message key="text_71" value="기능 설명"/>
+    <Message key="text_72" value="기능 표시 이름"/>
+    <Message key="text_73" value="기능 정렬 고유값"/>
+    <Message key="text_74" value="기능 그룹 이름"/>
+    <Message key="text_75" value="디스플레이 그룹 이름"/>
+    <Message key="text_76" value="디스플레이 그룹 종류"/>
+    <Message key="text_77" value="디스플레이 순서"/>
+    <Message key="text_78" value="디스플레이 추가 정보"/>
+    <Message key="text_79" value="서비스 이름"/>
+    <Message key="text_80" value="알림"/>
+    <Message key="text_81" value="전체"/>
+    <Message key="text_82" value="서버카테고리별"/>
+    <Message key="text_83" value="기간별"/>
+    <Message key="text_84" value="사용자별"/>
+    <Message key="text_85" value="사용자그룹별"/>
+    <Message key="text_86" value="부터"/>
+    <Message key="text_87" value="선택목록 다운로드"/>
+    <Message key="text_88" value="기능 목록"/>
+    <Message key="text_89" value="기능 그룹 목록"/>
+    <Message key="text_90" value="사용자 그룹 목록"/>
+    <Message key="text_91" value="내보내기 목록에 추가"/>
+    <Message key="text_92" value="리셋"/>
+    <Message key="text_93" value="파일 다운로드"/>
+    <Message key="text_94" value="디스플레이 그룹 목록"/>
+    <Message key="text_95" value="파일 업로드"/>
+    <Message key="text_96" value="데이터 가져오기"/>
+    <Message key="text_97" value="데이터 등록 작업 시작"/>
+    <Message key="text_98" value="기능 파일"/>
+    <Message key="text_99" value="디스플레이 그룹 파일"/>
+    
+    <Message key="PaneText_1" value="실행 / 캐스트 가능한 기능 목록"/>
+    <Message key="PaneText_2" value="서버 카테고리 목록"/>
+    <Message key="PaneText_3" value="사용자 목록 보기"/>
+    <Message key="PaneText_4" value="사용자 그룹 목록 보기"/>
+    <Message key="PaneText_5" value="기능 목록 보기"/>
+    <Message key="PaneText_6" value="기능 그룹 목록 보기"/>
+    <Message key="PaneText_7" value="디스플레이 그룹 목록 보기"/>
+    <Message key="PaneText_8" value="사용자 - 사용자 그룹 연결"/>
+    <Message key="PaneText_9" value="사용자 {0}가(이) 포함된 사용자 그룹 목록"/>
+    <Message key="PaneText_10" value="사용자 상세 보기"/>
+    <Message key="PaneText_11" value="사용자 그룹 - 사용자 연결"/>
+    <Message key="PaneText_12" value="사용자 그룹 {0}에 포함된 사용자 목록"/>
+    <Message key="PaneText_13" value="실행 기능 - 기능 그룹 연결"/>
+    <Message key="PaneText_14" value="실행 기능 {0}가(이) 포함된 기능 그룹 목록"/>
+    <Message key="PaneText_15" value="기능 그룹 - 실행 기능 연결"/>
+    <Message key="PaneText_16" value="기능 그룹 {0}에 포함된 실행 기능 목록"/>
+    <Message key="PaneText_17" value="사용자 그룹 상세 보기"/>
+    <Message key="PaneText_18" value="기능 상세 보기"/>
+    <Message key="PaneText_19" value="기능 그룹 상세 보기"/>
+    <Message key="PaneText_20" value="디스플레이 그룹 상세 보기"/>
+    <Message key="PaneText_21" value="캐스트 기능 - 기능 그룹 연결"/>
+    <Message key="PaneText_22" value="캐스트 기능 {0}가(이) 포함된 기능 그룹 목록"/>
+    <Message key="PaneText_23" value="기능 그룹 - 캐스트 기능 연결"/>
+    <Message key="PaneText_24" value="기능 그룹 {0}에 포함된 캐스트 기능 목록"/>
+    <Message key="PaneText_25" value="기능 - 디스플레이 그룹 연결"/>
+    <Message key="PaneText_26" value="기능 {0}가(이) 포함된 디스플레이 그룹 목록"/>
+    <Message key="PaneText_27" value="디스플레이 그룹 - 기능 연결"/>
+    <Message key="PaneText_28" value="디스플레이 그룹 {0}에 포함된 기능 목록"/>
+    <Message key="PaneText_29" value="처리한 캐스트 목록"/>
+    <Message key="PaneText_30" value="서버 상태 목록"/>
+    <Message key="PaneText_31" value="사용자 생성"/>
+    <Message key="PaneText_32" value="감사 로그 목록"/>
+    <Message key="PaneText_33" value="서버 접속 목록"/>
+    <Message key="PaneText_34" value="받은 / 위임 가능 캐스트 목록"/>
+    <Message key="PaneText_35" value="사용자 그룹 생성"/>
+    <Message key="PaneText_36" value="기능 생성"/>
+    <Message key="PaneText_37" value="기능 그룹 생성"/>
+    <Message key="PaneText_38" value="디스플레이 그룹 생성"/>
+    <Message key="PaneText_39" value="액션 로그 목록"/>
+    <Message key="PaneText_40" value="액션 로그 상세 보기"/>
+    <Message key="PaneText_41" value="내 정보 수정"/>
+    <Message key="PaneText_42" value="데이터 내보내기"/>
+    <Message key="PaneText_43" value="데이터 가져오기"/>
+    <Message key="PaneText_44" value="언어 데이터 가져오기"/>
+    <Message key="PaneText_45" value="서버 상태 조회"/>
+    <Message key="PaneText_46" value="서버 리포트 조회"/>
+    
+    <Message key="header_01" value="사용자 생성"/>
+    <Message key="header_02" value="기능 생성"/>
+    <Message key="header_03" value="기능 호출 서버 설정"/>
+    <Message key="header_04" value="기능 그룹 생성"/>
+    <Message key="header_05" value="기능 그룹 매핑"/>
+    <Message key="header_06" value="사용자 그룹 생성"/>
+    <Message key="header_07" value="사용자 그룹 매핑"/>
+    <Message key="header_08" value="기능 그룹 매핑 제거"/>
+    <Message key="header_09" value="사용자 그룹 매핑 제거"/>
+    <Message key="header_10" value="기능 수정"/>
+    <Message key="header_11" value="기능 그룹 수정"/>
+    <Message key="header_12" value="사용자 수정"/>
+    <Message key="header_13" value="사용자 그룹 수정"/>
+    <Message key="header_14" value="내 정보 수정"/>
+    <Message key="header_15" value="캐스트 생성"/>
+    <Message key="header_16" value="캐스트 취소"/>
+    <Message key="header_17" value="캐스트 기능 수행"/>
+    <Message key="header_18" value="캐스트 거부"/>
+    <Message key="header_19" value="캐스트 위임"/>
+
+    <Message key="datatable_01" value="데이터가 존재하지 않습니다."/>
+    <Message key="datatable_02" value="내부 오류가 발생하였습니다."/>
+    <Message key="datatable_03" value="데이터 로드 중..."/>
+    <Message key="datatable_04" value="오름차순으로 정렬하려면 클릭"/>
+    <Message key="datatable_05" value="내림차순으로 정렬하려면 클릭"/>
+                
+    <Message key="err_nocode" value="에러코드에 정의된 메세지가 존재하지 않습니다."/>
+    
+    <Message key="err_16778215" value="STEER세션이 만료되었습니다. 재 로그인 해 주세요."/>
+    <Message key="err_16778216" value="STEER 시스템에 연결 할 수 없습니다. 서버 상태를 확인 해 주세요."/>
+    <Message key="err_16778217" value="통신 중 장애가 발생하였습니다. 서버 상태를 확인 해 주세요."/>
+    <Message key="err_16778218" value="사용 가능한 권한이 없습니다. 관리자에게 문의하세요."/>
+    <Message key="err_16778219" value="알수 없는 오류입니다. 관리자에게 문의하세요."/>
+    <Message key="err_16778220" value="권한이 없습니다. 관리자에게 문의하세요."/>
+    <Message key="err_16778221" value="로컬라이징 데이터가 잘못되었습니다. 관리자에게 문의하세요."/>
+    <Message key="err_16778222" value="잘못된 데이터 입니다. 관리자에게 문의하세요."/>
+    <Message key="err_16778223" value="예외 상황이 발생하였습니다. 관리자에게 문의하세요."/>
+    
+    <Message key="err_33554436" value="서버가 연결되어 있지 않습니다"/>
+    <Message key="err_33554437" value="데이터 전송 제한시간을 초과하였습니다"/>
+    
+    <Message key="err_83885830" value="데이터베이스 오류가 발생하였습니다."/>
+    <Message key="err_83886080" value="정상적으로 처리되었습니다."/>
+    <Message key="err_83886180" value="아이디 또는 패스워드가 일치하지 않습니다"/>
+    <Message key="err_83886280" value="권한이 없거나 기능이 실행타입으로 설정되어 있지 않습니다"/>
+    <Message key="err_83886281" value="사용자 그룹이 비활성 상태입니다"/>
+    <Message key="err_83886282" value="기능 그룹이 비활성 상태입니다"/>
+    <Message key="err_83886283" value="기능이 비활성 상태입니다"/>
+    <Message key="err_83886284" value="대상 그룹이 기능을 실행할 권한이 없거나 기능에 문제가 있습니다"/>
+    <Message key="err_83886285" value="기능 호출 타입이 정의되어 있지 않습니다"/>
+    <Message key="err_83886286" value="권한이 없거나 기능이 캐스트타입으로 설정되어 있지 않습니다"/>
+    <Message key="err_83886287" value="캐스트 상태가 변하였거나 캐스트 대상 그룹에 속해있지 않습니다"/>
+    <Message key="err_83886288" value="캐스트 상태가 변하였거나 존재하지 않는 캐스트입니다"/>
+    <Message key="err_83886289" value="감사자 그룹에 속해있지 않습니다"/>
+    <Message key="err_83886290" value="해당 데이터가 존재하지 않습니다"/>
+    <Message key="err_83886291" value="중복로그인 되었습니다. 기존 로그인 세션은 강제만료되었습니다."/>
+    <Message key="err_83886292" value="세션이 만료되었습니다."/>
+    <Message key="err_83886293" value="클라이언트의 IP 가 변경되었습니다. 다시 로그인 해 주세요."/>
+    <Message key="err_83886294" value="이미 존재하는 계정입니다."/>
+    <Message key="err_83886295" value="사용자가 로그인 불가 상태입니다."/>
+    
+    <Message key="err_167771910" value="데이터베이스 오류가 발생하였습니다."/>
+                
+    <Message key="col_actionLogIDint" value="번호"/>
+    <Message key="col_actionMemo" value="메모"/>
+    <Message key="col_actionTime" value="시간"/>
+    <Message key="col_actionType" value="액션타입"/>
+    <Message key="col_actionUserIDint" value="사용자"/>
+    <Message key="col_activityTime" value="보고시각"/>
+    <Message key="col_allowMultipleLoginFlag" value="중복로그인허용여부"/>
+    <Message key="col_arguments" value="파라미터"/>
+    <Message key="col_auditorUserGroupIDint" value="위임그룹"/>
+    <Message key="col_auditorUserGroupName" value="위임그룹명"/>
+    <Message key="col_auditorUserIDint" value="위임자"/>
+    <Message key="col_calleeServerType" value="서버타입"/>
+    <Message key="col_callerServerType" value="호출자서버타입"/>
+    <Message key="col_castComment" value="코멘트"/>
+    <Message key="col_casterUserIDint" value="캐스터"/>
+    <Message key="col_casterUserIDstr" value="캐스터"/>
+    <Message key="col_castIDint" value="캐스트"/>
+    <Message key="col_castState" value="상태"/>
+    <Message key="col_castTargetUserGroupIDint" value="타겟 사용자 그룹"/>
+    <Message key="col_castTargetUserGroupIDstr" value="타겟 사용자 그룹"/>
+    <Message key="col_dangerLevel" value="위험도"/>
+    <Message key="col_displayName" value="표시이름"/>
+    <Message key="col_displaySortOrder" value="순서"/>
+    <Message key="col_executeUserGroupIDint" value="실행 사용자 그룹"/>
+    <Message key="col_executionTime" value="실행시간"/>
+    <Message key="col_executorUserIDint" value="실행 사용자"/>
+    <Message key="col_functionDescription" value="기능설명"/>
+    <Message key="col_functionGroupIDint" value="기능그룹"/>
+    <Message key="col_functionGroupName" value="기능그룹명"/>
+    <Message key="col_functionGroupUseFlag" value="사용여부"/>
+    <Message key="col_functionIDint" value="기능번호"/>
+    <Message key="col_functionName" value="기능명"/>
+    <Message key="col_functionUseFlag" value="사용여부"/>
+    <Message key="col_globalUniqueFunctionIDint" value="GUFID"/>
+    <Message key="col_globalUniqueServerIDint" value="GUSID"/>
+    <Message key="col_infoInt1" value="정보필드1"/>
+    <Message key="col_infoInt2" value="정보필드2"/>
+    <Message key="col_infoText" value="정보텍스트"/>
+    <Message key="col_lastUpdateTime" value="마지막수정시간"/>
+    <Message key="col_previousCastIDint" value="이전캐스트"/>
+    <Message key="col_requireSessionFlag" value="세션필요여부"/>
+    <Message key="col_results" value="결과"/>
+    <Message key="col_serverType" value="서버타입"/>
+    <Message key="col_userGroupIDint" value="번호"/>
+    <Message key="col_userGroupName" value="그룹이름"/>
+    <Message key="col_userGroupUseFlag" value="사용여부"/>
+    <Message key="col_userIDint" value="사용자번호"/>
+    <Message key="col_userIDstr" value="사용자"/>
+    <Message key="col_userName" value="사용자명"/>
+    <Message key="col_userState" value="사용자상태"/>
+    <Message key="col_categoryIDint" value="번호"/>
+    <Message key="col_serverName" value="서버이름"/>
+    <Message key="col_description" value="설명"/>
+    <Message key="col_displayGroupIDint" value="번호"/>
+    <Message key="col_displayGroupName" value="그룹명"/>
+    <Message key="col_displayGroupUseFlag" value="사용여부"/>
+    <Message key="col_displayGroupType" value="그룹타입"/>
+    <Message key="col_displayOrder" value="주메뉴순서"/>
+    <Message key="col_displayAdditionalInfo" value="부가정보"/>
+    <Message key="col_serviceName" value="서비스명"/>
+    <Message key="col_displaySubOrder" value="서브순서"/>
+    <Message key="col_displayFunctionAdditionalInfo" value="부가정보"/>
+    <Message key="col_serverNumber" value="서버번호"/>
+    <Message key="col_sendCount" value="보낸횟수"/>
+    <Message key="col_receiveCount" value="받은횟수"/>
+    <Message key="col_connectTime" value="연결시간"/>
+    <Message key="col_serverState" value="서버상태"/>
+    <Message key="col_serverStateUpdateTime" value="보고시각"/>
+    <Message key="col_pythonVersion" value="파이썬버젼"/>
+    <Message key="col_osVersion" value="운영체제"/>
+    <Message key="col_execPath" value="실행경로"/>
+    <Message key="col_logPath" value="로그경로"/>
+    <Message key="col_connectionInfo" value="연결정보"/>
+    <Message key="col_systemCPU" value="시스템CPU점유울"/>
+    <Message key="col_processCPU" value="프로세스CPU점유율"/>
+    <Message key="col_systemMemory" value="시스템메모리점유율"/>
+    <Message key="col_processMemory" value="프로세스메모리점유율"/>
+                
+    <Message key="code_actionType_1" value="실행"/>
+    <Message key="code_actionType_2" value="캐스트"/>
+    <Message key="code_actionType_3" value="리포트"/>
+    <Message key="code_allowMultipleLoginFlag_0" value="불가능"/>
+    <Message key="code_allowMultipleLoginFlag_1" value="가능"/>            
+    <Message key="code_castState_1" value="진행"/>
+    <Message key="code_castState_2" value="완료"/>
+    <Message key="code_castState_3" value="거부"/>
+    <Message key="code_castState_4" value="위임"/>
+    <Message key="code_castState_5" value="취소"/>
+    <Message key="code_displayGroupType_1" value="탑메뉴"/>
+    <Message key="code_displayGroupType_2" value="사이드메뉴"/>
+    <Message key="code_displayGroupUseFlag_0" value="미사용"/>
+    <Message key="code_displayGroupUseFlag_1" value="사용"/>                
+    <Message key="code_executionState_1" value="시도"/>
+    <Message key="code_executionState_2" value="성공"/>
+    <Message key="code_executionState_3" value="실패"/>
+    <Message key="code_functionGroupUseFlag_0" value="미사용"/>
+    <Message key="code_functionGroupUseFlag_1" value="사용"/>
+    <Message key="code_functionUseFlag_0" value="미사용"/>
+    <Message key="code_functionUseFlag_1" value="사용"/>
+    <Message key="code_requireSessionFlag_0" value="불필요"/>
+    <Message key="code_requireSessionFlag_1" value="필요"/>
+    <Message key="code_serverType_0" value="ArbiterGW"/>
+    <Message key="code_serverType_1" value="SteerWeb"/>
+    <Message key="code_serverType_10" value="SteerSession"/>
+    <Message key="code_serverType_11" value="GameAdminTool"/>
+    <Message key="code_serverType_12" value="SteerBridge"/>
+    <Message key="code_serverType_13" value="HubGW"/>
+    <Message key="code_serverType_14" value="CardMaker"/>
+    <Message key="code_serverType_15" value="CardDealer"/>
+    <Message key="code_serverType_16" value="Box"/>
+    <Message key="code_serverType_17" value="BoxBridge"/>
+    <Message key="code_serverType_18" value="DBGW"/>
+    <Message key="code_serverType_19" value="WebCSTool"/>
+    <Message key="code_serverType_2" value="SteerGW"/>
+    <Message key="code_serverType_20" value="CardSteerBridge"/>
+    <Message key="code_serverType_3" value="SteerHUB"/>
+    <Message key="code_serverType_4" value="SteerMind"/>
+    <Message key="code_serverType_5" value="SteerDB"/>
+    <Message key="code_serverType_6" value="GAS"/>
+    <Message key="code_serverType_7" value="GlogDB"/>
+    <Message key="code_serverType_8" value="SteerClient"/>
+    <Message key="code_serverType_9" value="SteerCast"/>
+    <Message key="code_serverType_32" value="Dice"/>
+    <Message key="code_serverType_35" value="SteerEye"/>
+    <Message key="code_userGroupUseFlag_0" value="미사용"/>
+    <Message key="code_userGroupUseFlag_1" value="사용"/>
+    <Message key="code_userState_1" value="사용"/>
+    <Message key="code_userState_0" value="미사용"/>
+    <Message key="code_userState_2" value="제재"/>
+    <Message key="code_serverState_1" value="시작됨"/>
+    <Message key="code_serverState_2" value="종료됨"/>   
+</Steer>

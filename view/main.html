@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{=T.accepted_language or 'ko'}}">
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<title id='productTitle'>Steer System</title>
+	<style type="text/css">
+	body {
+		margin:0;
+		padding:0;
+	}
+	</style>
+	
+	<!-- # YUI Script -->
+    <link rel="stylesheet" type="text/css" href="static/jsCruise/build/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/jsCruise/build/assets/skins/sam/skin.css">
+    <link rel="stylesheet" type="text/css" href="static/jsCruise/build/assets/skins/sam/calendar.css">
+    <link rel="stylesheet" type="text/css" href="static/jsCruise/build/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/jsCruise/build/tabview/assets/skins/sam/tabview.css" />
+	
+	<script type="text/javascript" src="static/jsCruise/build/yuiloader/yuiloader.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/utilities/utilities.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/container/container_core-min.js"></script> 
+	<script type="text/javascript" src="static/jsCruise/build/menu/menu-min.js"></script> 
+	<script type="text/javascript" src="static/jsCruise/build/resize/resize-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/layout/layout-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/logger/logger-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/connection/connection-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/dragdrop/dragdrop-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/element/element-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/button/button-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/animation/animation-min.js"></script> 	
+	<script type="text/javascript" src="static/jsCruise/build/container/container-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/container/container_core-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/json/json-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/tabview/tabview-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/paginator/paginator-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/datasource/datasource-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/datatable/datatable-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/progressbar/progressbar-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/calendar/calendar-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/uploader/uploader-min.js"></script>
+	
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opAjaxRequest.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opLoader.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opLog.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opDataTable.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opLayout.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opMenu.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opMenuBar.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opMessageBox.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opTemplate.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opDialog.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opEvent.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opTimer.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opOverlayManager.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opButtons.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opResourceManager.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opProgressBar.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opValidation.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opCalendar.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opTabView.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opUploader.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opGlobal.js'></script>
+	
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/fileuploader.js'></script>
+	
+	<script type='text/javascript' src='static/js/steerCastLogic.js'></script>
+	<script type='text/javascript' src='static/js/steerMindLogic.js'></script>
+	<script type='text/javascript' src='static/js/steerGlobal.js'></script>
+	<script type='text/javascript' src='static/js/steerError.js'></script>
+	<script type='text/javascript' src='static/js/steerMainLayout.js'></script>
+	<script type='text/javascript' src='static/js/steerMenu.js'></script>
+	<script type='text/javascript' src='static/js/steerStatic.js'></script>
+	<script type='text/javascript' src='static/js/steerLoading.js'></script>
+	<script type='text/javascript' src='static/js/steerLogout.js'></script>
+	
+	<script type='text/javascript' src='static/js/handlers/executeCastFunctionListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/serverCategoryListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/userListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/userGroupListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/functionListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/functionGroupListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/displayGroupListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/userAndUserGroupLinkHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/userGroupAndUserLinkHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/functionAndFunctionGroupLinkHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/functionGroupAndFunctionLinkHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/castFunctionAndFunctionGroupLinkHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/castFunctionGroupAndFunctionLinkHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/functionAndDisplayGroupLinkHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/displayGroupAndFunctionLinkHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/serverStatusListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/dangerLevelActionLogListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/connectedServerListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/receivedDelegatedCastListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/completedCastListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/castListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/actionLogListHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/exportDataHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/exportLanguageDataHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/importDataHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/importLanguageDataHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/steerEye_GetPageServerReportHandler.js'></script>
+	<script type='text/javascript' src='static/js/handlers/steerEye_GetPageServerStateHandler.js'></script>
+	
+	<link rel="stylesheet" type="text/css" href="static/css/default.css">
+	<link rel="stylesheet" type="text/css" href="static/css/fileuploader.css">
+	
+    <style type="text/css">
+        html {
+            background-color: #FFFFFF;
+        }
+
+	    fieldset, 
+	    fieldset div {
+	        border: 2px groove #FFF;
+	        margin: .3em;
+	        padding: .2em;
+	    }
+	    legend {
+	    	padding-left: .5em;
+	    	padding-right: .5em;
+	    }
+    </style>
+</head>
+
+<body class="yui-skin-sam">
+<div id="SteerBaseDIV">
+	<div id="baseTop">
+	    <!-- 전체 위쪽 패널 -->
+		<div id="topHeader">
+			<table class='tbMainHeader' cellpadding='0' cellspacing='0'>
+			<tr>
+				<td class='tdHeaderLeft'>
+					<span class='logo'>STEER</span>&nbsp;<font id='releaseName' class='smallText' color='#FFFFFF'></font>
+				</td>
+				<td id="loginStatusTD" class='tdHeaderRight'>
+					<div id="loginStatusDiv"></div>
+				</td>
+			</tr>
+			</table>
+		</div>
+		<!-- 메뉴바 -->
+	    <div id="baseMenuBar" class="yuimenubar yuimenubarnav">
+	        <div class="bd">
+	            <ul class="first-of-type" id="steerTopMenuBase">
+	            <!-- 메뉴 컨텐츠 -->
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+	<!-- Base Div -->
+	<div id="baseCenter">
+		<div id="centerContents"></div>
+	</div>
+	<div id="baseRight">
+	    <!-- 최상위 오른쪽 패널 -->
+	</div>
+	<div id="baseLeft">
+	    <!-- 최상위 왼쪽 패널 -->
+	    <div id="leftMenuDiv"></div>
+	</div>
+	<div id="baseBottom">
+	    <!-- 최상위 아래쪽 패널 -->
+		<table class='tbBottom' cellpadding='0' cellspacing='0'>
+		<tr>
+			<td class='tdFooterCenter'>
+			<!-- # Copyright section on the bottom -->
+				Version: <span id='version'></span> Copyright(c) 2010-2012 Bluehole Studio. All rights reserved.
+			</td>
+		</tr>
+		</table>
+	</div>
+	<!-- Base Div End -->
+</div>
+</html>

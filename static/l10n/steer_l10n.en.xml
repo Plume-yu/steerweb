@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Steer>
+	<Message key="notice" value="Steer System.[nl]Please enter authorized ID and password to log in."/>
+	<Message key="productTitle" value="Secure TEra Executive Ruler"/>
+	<Message key="msg_01" value="Password does not match."/>
+	<Message key="msg_02" value="Please input item."/>
+	<Message key="msg_03" value="Requesting. Please wait."/>
+	<Message key="msg_04" value="Processed normally."/>
+	<Message key="msg_05" value="Logging in…"/>
+	<Message key="msg_06" value="Please enter ID."/>
+	<Message key="msg_07" value="Please enter password."/>
+	<Message key="msg_08" value="Loading. Please wait."/>
+	<Message key="msg_09" value=" is logged on."/>
+	<Message key="msg_10" value="Are you sure to log out?"/>
+	<Message key="msg_11" value="You have no available authority. Please contact administrator."/>
+	<Message key="msg_12" value="Quick menu is not configured."/>
+	<Message key="msg_13" value="No selected list."/>
+	<Message key="msg_14" value="Please select from list or select register menu."/>
+	<Message key="msg_15" value="Please select user group to add."/>
+	<Message key="msg_16" value="Please select user to add."/>
+	<Message key="msg_17" value="Please select function group to add."/>
+	<Message key="msg_18" value="Please select function to add."/>
+	<Message key="msg_19" value="Please select display group to add."/>
+	<Message key="msg_20" value=" user will be deleted. Continue?"/>
+	<Message key="msg_21" value=" user is deleted."/>
+	<Message key="msg_22" value="Required function group to be connected."/>
+	<Message key="msg_23" value="You must enter function group name."/>
+	<Message key="msg_24" value=" user group will be deleted. Continue?"/>
+	<Message key="msg_25" value=" user group is deleted."/>
+	<Message key="msg_26" value="You must select server category."/>
+	<Message key="msg_27" value=" function will be deleted. Continue?"/>
+	<Message key="msg_28" value=" function group will be deleted. Continue?"/>
+	<Message key="msg_29" value=" display group will be deleted. Continue?"/>
+	<Message key="msg_30" value="Due to preparation of additional planning, development, and link discussion, cast function is currently on hold."/>
+	<Message key="msg_31" value="No data to export."/>
+	<Message key="msg_32" value="Information of export data:"/>
+	<Message key="msg_33" value="You can download through link below."/>
+	<Message key="msg_34" value="Number of included functions:"/>
+	<Message key="msg_35" value="Number of included function group:"/>
+	<Message key="msg_36" value="Number of included user group:"/>
+	<Message key="msg_37" value="Number of included display group:"/>
+	<Message key="msg_38" value="After file upload is finished, data to import in file will be displayed here."/>
+	<Message key="msg_39" value="After file upload is finished, analyze result and register button will be displayed here."/>
+	<Message key="msg_40" value="Invalid file extention for {file}. Only {extensions} extension is allowed."/>
+	<Message key="msg_41" value="Exceed maximum allowed file size. Allowed maximum file size should be {sizeLimit}."/>
+	<Message key="msg_42" value="Below minimum allowed file size. Allowed minimum file size should be {minSizeLimit}."/>
+	<Message key="msg_43" value="{file} file is empty. Please upload again."/>
+	<Message key="msg_44" value="Uploading file now. Upload will be canceled if move to another page."/>
+	<Message key="msg_45" value="File uploading and data analyzing…"/>
+	<Message key="msg_46" value="File upload and data analysis completed."/>
+	<Message key="msg_47" value="Saved file name in system:"/>
+	<Message key="msg_48" value="Please check analysis result before proceed."/>
+	<Message key="msg_49" value="Add: function number [{0}] will be registered."/>
+	<Message key="msg_50" value="Add: function group name [{0}] will be registered."/>
+	<Message key="msg_51" value="Add: function group - function connection [{0}] will be registered."/>
+	<Message key="msg_52" value="Add: display group number [{0}] will be registered."/>
+	<Message key="msg_53" value="Add: display group - function connection number [{0}] will be registered."/>
+	<Message key="msg_54" value="Add: user group [{0}] will be registered."/>
+	<Message key="msg_55" value="Change: function number [{0}] will be changed."/>
+	<Message key="msg_56" value="Change: function group name [{0}] will be changed."/>
+	<Message key="msg_57" value="Change: function group - function connection [{0}] will be changed."/>
+	<Message key="msg_58" value="Change: display group number [{0}] will be changed."/>
+	<Message key="msg_59" value="Change: display group - function connection number [{0}] will be changed."/>
+	<Message key="msg_60" value="Change: user group name [{0}] will be changed."/>
+	<Message key="msg_61" value="ImportType is not valid."/>
+	<Message key="msg_62" value="Previous data: {0}"/>
+	<Message key="msg_63" value="Registered data: {0}"/>
+	<Message key="msg_64" value="Once started, you cannot cancel register. Continue?"/>
+	<Message key="msg_65" value="Import breakdown occurred. Please try again after check error code."/>
+	<Message key="msg_66" value="Import completed and all data registered successfully."/>
+	<Message key="msg_67" value="Registering data…"/>
+	<Message key="msg_68" value="(Excessive script processing may be reported or browser stops responding according to import data size. Please wait for while to check analysis result.)"/>
+	<Message key="msg_69" value="All added and changed function group and function connection information will be registered to data after reset. Please make sure to check data."/>
+	<Message key="msg_70" value="No change: function number [{0}] is already registered."/>
+	<Message key="msg_71" value="No change: function group name [{0}] is already registered."/>
+	<Message key="msg_72" value="No change: function group - function connection [{0}, {1}] are already registered."/>
+	<Message key="msg_73" value="No change: display group number [{0}] is already registered."/>
+	<Message key="msg_74" value="No change: display group - function connection number [{0}, {1}] are already registered."/>
+	<Message key="msg_75" value="No change: user group [{0}] is already registered."/>
+	<Message key="msg_76" value="File upload and data application completed."/>
+	<Message key="msg_77" value="User group can be connected with only one function group."/>
+	<Message key="msg_78" value="User group can be connected with only one inspect group."/>
+	<Message key="msg_79" value="Please enter display group name."/>
+	<Message key="msg_80" value="The type of display group is 1 ~ 127."/>
+	<Message key="msg_81" value="The order of display is 1 ~ 127."/>
+	<Message key="msg_82" value="Please enter service name."/>
+	<Message key="msg_83" value="Function number is 1 ~ 16777216."/>
+	<Message key="msg_84" value="The danger level is 1 ~ 127."/>
+	<Message key="msg_85" value="Function sorting characteristic value is 1 ~ 127."/>
+	<Message key="msg_86" value="Please enter function name."/>
+	<Message key="msg_87" value="Please enter function display name."/>
+	<Message key="msg_88" value="You cannot use special characters."/>
+	<Message key="text_01" value="Result of request"/>
+	<Message key="text_02" value="OK"/>
+	<Message key="text_03" value="Cancel "/>
+	<Message key="text_04" value="Menu"/>
+	<Message key="text_05" value="Input error"/>
+	<Message key="text_06" value="Create"/>
+	<Message key="text_07" value="Error"/>
+	<Message key="text_08" value="Modify"/>
+	<Message key="text_09" value="Remove"/>
+	<Message key="text_10" value="Cancel cast"/>
+	<Message key="text_11" value="Perform cast"/>
+	<Message key="text_12" value="Reject cast"/>
+	<Message key="text_13" value="Entrust cast"/>
+	<Message key="text_14" value="Create cast"/>
+	<Message key="text_15" value="Notice"/>
+	<Message key="text_16" value="Log in"/>
+	<Message key="text_17" value="Option"/>
+	<Message key="text_18" value="Save account information"/>
+	<Message key="text_19" value="Log in"/>
+	<Message key="text_20" value="On"/>
+	<Message key="text_21" value="Off"/>
+	<Message key="text_22" value="Quick menu"/>
+	<Message key="text_23" value="Log out"/>
+	<Message key="text_24" value="First"/>
+	<Message key="text_25" value="Previous"/>
+	<Message key="text_26" value="Next"/>
+	<Message key="text_27" value="Last"/>
+	<Message key="text_28" value="Executable function"/>
+	<Message key="text_29" value="Castable function"/>
+	<Message key="text_30" value="Search"/>
+	<Message key="text_31" value="All"/>
+	<Message key="text_32" value="Add user group connection"/>
+	<Message key="text_33" value="Add"/>
+	<Message key="text_34" value="Add user connection"/>
+	<Message key="text_35" value="Add function group connection"/>
+	<Message key="text_36" value="Add function connection"/>
+	<Message key="text_37" value="Add display group connection"/>
+	<Message key="text_38" value="Connected user group"/>
+	<Message key="text_39" value="Connected function group"/>
+	<Message key="text_40" value="Connected inspect group"/>
+	<Message key="text_41" value="Connected function"/>
+	<Message key="text_42" value="Password"/>
+	<Message key="text_43" value="User name"/>
+	<Message key="text_44" value="User status"/>
+	<Message key="text_45" value="Duplicated log in"/>
+	<Message key="text_46" value="Loading…"/>
+	<Message key="text_47" value="User ID"/>
+	<Message key="text_48" value="User password"/>
+	<Message key="text_49" value="Confirm user password"/>
+	<Message key="text_50" value="Confirm request"/>
+	<Message key="text_51" value="Refresh"/>
+	<Message key="text_52" value=" second"/>
+	<Message key="text_53" value="Danger level"/>
+	<Message key="text_54" value=" or more"/>
+	<Message key="text_55" value="Configuration and search"/>
+	<Message key="text_56" value="Function group to connect"/>
+	<Message key="text_57" value="Reset"/>
+	<Message key="text_58" value="Configuration"/>
+	<Message key="text_59" value="Received cast"/>
+	<Message key="text_60" value="Entrustable cast"/>
+	<Message key="text_61" value="User group name"/>
+	<Message key="text_62" value="Inspect user group to connect"/>
+	<Message key="text_63" value="Select server category"/>
+	<Message key="text_64" value="Function number"/>
+	<Message key="text_65" value="Function name"/>
+	<Message key="text_66" value="Used"/>
+	<Message key="text_67" value="Danger level"/>
+	<Message key="text_68" value="Session required"/>
+	<Message key="text_69" value="Execute parameter list"/>
+	<Message key="text_70" value="Result list"/>
+	<Message key="text_71" value="Function description"/>
+	<Message key="text_72" value="Function display name"/>
+	<Message key="text_73" value="Function sorting characteristic value"/>
+	<Message key="text_74" value="Function group name"/>
+	<Message key="text_75" value="Display group name"/>
+	<Message key="text_76" value="Display group type"/>
+	<Message key="text_77" value="Display order"/>
+	<Message key="text_78" value="Additional display information"/>
+	<Message key="text_79" value="Service name"/>
+	<Message key="text_80" value="Notice"/>
+	<Message key="text_81" value="All"/>
+	<Message key="text_82" value="By server category"/>
+	<Message key="text_83" value="By period"/>
+	<Message key="text_84" value="By user"/>
+	<Message key="text_85" value="By user group"/>
+	<Message key="text_86" value=" ~"/>
+	<Message key="text_87" value="Download selected list"/>
+	<Message key="text_88" value="Function list"/>
+	<Message key="text_89" value="Functnion group list"/>
+	<Message key="text_90" value="User group list"/>
+	<Message key="text_91" value="Add to export list"/>
+	<Message key="text_92" value="Reset"/>
+	<Message key="text_93" value="File download"/>
+	<Message key="text_94" value="Display group list"/>
+	<Message key="text_95" value="File upload"/>
+	<Message key="text_96" value="Import data"/>
+	<Message key="text_97" value="Start data register"/>
+	<Message key="text_98" value="Functnion file"/>
+	<Message key="text_99" value="Display group file"/>
+	<Message key="PaneText_1" value="Executable/castable function list"/>
+	<Message key="PaneText_2" value="Server category list"/>
+	<Message key="PaneText_3" value="View user list"/>
+	<Message key="PaneText_4" value="View user group list"/>
+	<Message key="PaneText_5" value="View function list"/>
+	<Message key="PaneText_6" value="View function group list"/>
+	<Message key="PaneText_7" value="View display group list"/>
+	<Message key="PaneText_8" value="Connect user - user group"/>
+	<Message key="PaneText_9" value="User group that contains user {0}"/>
+	<Message key="PaneText_10" value="View user detail"/>
+	<Message key="PaneText_11" value="Connect user group - user"/>
+	<Message key="PaneText_12" value="User list that belongs to user group {0}"/>
+	<Message key="PaneText_13" value="Connect execute function - function group"/>
+	<Message key="PaneText_14" value="Function group list that contains execute function {0}"/>
+	<Message key="PaneText_15" value="Connect function group - execute function"/>
+	<Message key="PaneText_16" value="Execute function list which belongs to function group {0}"/>
+	<Message key="PaneText_17" value="View user group detail"/>
+	<Message key="PaneText_18" value="View function detail"/>
+	<Message key="PaneText_19" value="View function group detail"/>
+	<Message key="PaneText_20" value="View display group detail"/>
+	<Message key="PaneText_21" value="Connect cast function - function group"/>
+	<Message key="PaneText_22" value="Function group list that contains cast function {0}"/>
+	<Message key="PaneText_23" value="Connect function group - cast function"/>
+	<Message key="PaneText_24" value="Cast function list which belongs to function group {0}"/>
+	<Message key="PaneText_25" value="Connect function - display group"/>
+	<Message key="PaneText_26" value="Display group list that contains function {0}"/>
+	<Message key="PaneText_27" value="Connect display group - function"/>
+	<Message key="PaneText_28" value="Function list which belongs to display group {0}"/>
+	<Message key="PaneText_29" value="Handled cast list"/>
+	<Message key="PaneText_30" value="Server status list"/>
+	<Message key="PaneText_31" value="Create user"/>
+	<Message key="PaneText_32" value="Inspect log list"/>
+	<Message key="PaneText_33" value="Server access list"/>
+	<Message key="PaneText_34" value="Received/entrustable cast list"/>
+	<Message key="PaneText_35" value="Create user group"/>
+	<Message key="PaneText_36" value="Create function"/>
+	<Message key="PaneText_37" value="Create function group"/>
+	<Message key="PaneText_38" value="Create display group"/>
+	<Message key="PaneText_39" value="Action log list"/>
+	<Message key="PaneText_40" value="View action log detail"/>
+	<Message key="PaneText_41" value="Modify my information"/>
+	<Message key="PaneText_42" value="Export data"/>
+	<Message key="PaneText_43" value="Import data"/>
+	<Message key="PaneText_44" value="Import language data"/>
+	<Message key="header_01" value="Create user"/>
+	<Message key="header_02" value="Create function"/>
+	<Message key="header_03" value="Configure function calling server"/>
+	<Message key="header_04" value="Create function group"/>
+	<Message key="header_05" value="Function group mapping"/>
+	<Message key="header_06" value="Create user group"/>
+	<Message key="header_07" value="User group mapping"/>
+	<Message key="header_08" value="Remove function group mapping"/>
+	<Message key="header_09" value="Remove user group mapping"/>
+	<Message key="header_10" value="Modify function"/>
+	<Message key="header_11" value="Modify function group"/>
+	<Message key="header_12" value="Modify user"/>
+	<Message key="header_13" value="Modify user group"/>
+	<Message key="header_14" value="Modify my information"/>
+	<Message key="header_15" value="Create cast"/>
+	<Message key="header_16" value="Cancel cast"/>
+	<Message key="header_17" value="Perform cast function"/>
+	<Message key="header_18" value="Reject cast"/>
+	<Message key="header_19" value="Entrust cast"/>
+	<Message key="datatable_01" value="Data does not exist."/>
+	<Message key="datatable_02" value="Internal error occurred."/>
+	<Message key="datatable_03" value="Loading data…"/>
+	<Message key="datatable_04" value="Click for ascending sort"/>
+	<Message key="datatable_05" value="Click for descending sort"/>
+	<Message key="err_nocode" value="Error code defined message does not exist."/>
+	<Message key="err_16778215" value="STEER session expired. Please log in again."/>
+	<Message key="err_16778216" value="Cannot connect to STEER system. Please check server status."/>
+	<Message key="err_16778217" value="Obstacle occurred during communication. Please check server status."/>
+	<Message key="err_16778218" value="You have no available authority. Please contact administrator."/>
+	<Message key="err_16778219" value="Unknown error. Please contact administrator."/>
+	<Message key="err_16778220" value="You have no authority. Please contact administrator."/>
+	<Message key="err_16778221" value="Invalid localizing data. Please contact administrator."/>
+	<Message key="err_16778222" value="Invalid data. Please contact administrator."/>
+	<Message key="err_16778223" value="Exceptional situation occurred. Please contact administrator."/>
+	<Message key="err_33554436" value="Server is not connected."/>
+	<Message key="err_33554437" value="Exceeded data transfer time limit"/>
+	<Message key="err_83885830" value="Database error occurred."/>
+	<Message key="err_83886080" value="Processed normally."/>
+	<Message key="err_83886180" value="ID or password does not match."/>
+	<Message key="err_83886280" value="You have no authority or function is not configured for execution type"/>
+	<Message key="err_83886281" value="User group is inert"/>
+	<Message key="err_83886282" value="Function group is inert"/>
+	<Message key="err_83886283" value="Function is inert"/>
+	<Message key="err_83886284" value="Target group does not have authority for performing function or has problem in function."/>
+	<Message key="err_83886285" value="Function call type is not defined"/>
+	<Message key="err_83886286" value="You have no authority or function is not configured for cast type"/>
+	<Message key="err_83886287" value="Cast status is either changed or does not belong to cast target group"/>
+	<Message key="err_83886288" value="Cast status is either changed or cast does not exist"/>
+	<Message key="err_83886289" value="Does not belong to inspect group"/>
+	<Message key="err_83886290" value="Target data does not exist"/>
+	<Message key="err_83886291" value="Duplicated log in. Previous log in session is terminated."/>
+	<Message key="err_83886292" value="Session expired."/>
+	<Message key="err_83886293" value="Client IP changed. Please log in again."/>
+	<Message key="err_83886294" value="Account already exists."/>
+	<Message key="err_83886295" value="User cannot log in."/>
+	<Message key="err_167771910" value="Database error occurred."/>
+	<Message key="col_actionLogIDint" value="Number"/>
+	<Message key="col_actionMemo" value="Memo"/>
+	<Message key="col_actionTime" value="Time"/>
+	<Message key="col_actionType" value="Action type"/>
+	<Message key="col_actionUserIDint" value="User"/>
+	<Message key="col_activityTime" value="Reported time"/>
+	<Message key="col_allowMultipleLoginFlag" value="Duplicated log in permitted"/>
+	<Message key="col_arguments" value="Parameter"/>
+	<Message key="col_auditorUserGroupIDint" value="Entrust group"/>
+	<Message key="col_auditorUserGroupName" value="Entrust group name"/>
+	<Message key="col_auditorUserIDint" value="Mandator"/>
+	<Message key="col_calleeServerType" value="Server type"/>
+	<Message key="col_callerServerType" value="Caller server type"/>
+	<Message key="col_castComment" value="Comment"/>
+	<Message key="col_casterUserIDint" value="Caster"/>
+	<Message key="col_casterUserIDstr" value="Caster"/>
+	<Message key="col_castIDint" value="Cast"/>
+	<Message key="col_castState" value="Status"/>
+	<Message key="col_castTargetUserGroupIDint" value="Target user group"/>
+	<Message key="col_castTargetUserGroupIDstr" value="Target user group"/>
+	<Message key="col_dangerLevel" value="Danger level"/>
+	<Message key="col_displayName" value="Display name"/>
+	<Message key="col_displaySortOrder" value="Order"/>
+	<Message key="col_executeUserGroupIDint" value="Execute user group"/>
+	<Message key="col_executionTime" value="Execute time"/>
+	<Message key="col_executorUserIDint" value="Execute user"/>
+	<Message key="col_functionDescription" value="Function description"/>
+	<Message key="col_functionGroupIDint" value="Function group"/>
+	<Message key="col_functionGroupName" value="Function group name"/>
+	<Message key="col_functionGroupUseFlag" value="Used"/>
+	<Message key="col_functionIDint" value="Function number"/>
+	<Message key="col_functionName" value="Function name"/>
+	<Message key="col_functionUseFlag" value="Used"/>
+	<Message key="col_globalUniqueFunctionIDint" value="GUFID"/>
+	<Message key="col_globalUniqueServerIDint" value="GUSID"/>
+	<Message key="col_infoInt1" value="Information field 1"/>
+	<Message key="col_infoInt2" value="Information field 2"/>
+	<Message key="col_infoText" value="Information text"/>
+	<Message key="col_lastUpdateTime" value="Last modified time"/>
+	<Message key="col_previousCastIDint" value="Previous cast"/>
+	<Message key="col_requireSessionFlag" value="Session required"/>
+	<Message key="col_results" value="Results"/>
+	<Message key="col_serverType" value="Server type"/>
+	<Message key="col_userGroupIDint" value="Number"/>
+	<Message key="col_userGroupName" value="Group name"/>
+	<Message key="col_userGroupUseFlag" value="Used"/>
+	<Message key="col_userIDint" value="User number"/>
+	<Message key="col_userIDstr" value="User"/>
+	<Message key="col_userName" value="User name"/>
+	<Message key="col_userState" value="User status"/>
+	<Message key="col_categoryIDint" value="Number"/>
+	<Message key="col_serverName" value="Server name"/>
+	<Message key="col_description" value="Description"/>
+	<Message key="col_displayGroupIDint" value="Number"/>
+	<Message key="col_displayGroupName" value="Group name"/>
+	<Message key="col_displayGroupUseFlag" value="Used"/>
+	<Message key="col_displayGroupType" value="Group type"/>
+	<Message key="col_displayOrder" value="Main menu order"/>
+	<Message key="col_displayAdditionalInfo" value="Additional information"/>
+	<Message key="col_serviceName" value="Service name"/>
+	<Message key="col_displaySubOrder" value="Sub order"/>
+	<Message key="col_displayFunctionAdditionalInfo" value="Additional information"/>
+	<Message key="col_serverNumber" value="Server number"/>
+	<Message key="col_sendCount" value="Number of sent"/>
+	<Message key="col_receiveCount" value="Number of received"/>
+	<Message key="col_connectTime" value="Connected time"/>
+	<Message key="code_actionType_1" value="Execute"/>
+	<Message key="code_actionType_2" value="Cast"/>
+	<Message key="code_actionType_3" value="Report"/>
+	<Message key="code_allowMultipleLoginFlag_0" value="Not available"/>
+	<Message key="code_allowMultipleLoginFlag_1" value="Available"/>
+	<Message key="code_castState_1" value="Proceed"/>
+	<Message key="code_castState_2" value="Complete"/>
+	<Message key="code_castState_3" value="Reject"/>
+	<Message key="code_castState_4" value="Entrust"/>
+	<Message key="code_castState_5" value="Cancel"/>
+	<Message key="code_displayGroupType_1" value="Top menu"/>
+	<Message key="code_displayGroupType_2" value="Side menu"/>
+	<Message key="code_displayGroupUseFlag_0" value="Unused"/>
+	<Message key="code_displayGroupUseFlag_1" value="Used"/>
+	<Message key="code_executionState_1" value="Attempt"/>
+	<Message key="code_executionState_2" value="Success"/>
+	<Message key="code_executionState_3" value="Fail"/>
+	<Message key="code_functionGroupUseFlag_0" value="Unused"/>
+	<Message key="code_functionGroupUseFlag_1" value="Used"/>
+	<Message key="code_functionUseFlag_0" value="Unused"/>
+	<Message key="code_functionUseFlag_1" value="Used"/>
+	<Message key="code_requireSessionFlag_0" value="Not required"/>
+	<Message key="code_requireSessionFlag_1" value="Required"/>
+	<Message key="code_serverType_0" value="ArbiterGW"/>
+	<Message key="code_serverType_1" value="SteerWeb"/>
+	<Message key="code_serverType_10" value="SteerSession"/>
+	<Message key="code_serverType_11" value="GameAdminTool"/>
+	<Message key="code_serverType_12" value="SteerBridge"/>
+	<Message key="code_serverType_13" value="HubGW"/>
+	<Message key="code_serverType_14" value="CardMaker"/>
+	<Message key="code_serverType_15" value="CardDealer"/>
+	<Message key="code_serverType_16" value="Box"/>
+	<Message key="code_serverType_17" value="BoxBridge"/>
+	<Message key="code_serverType_18" value="DBGW"/>
+	<Message key="code_serverType_19" value="WebCSTool"/>
+	<Message key="code_serverType_2" value="SteerGW"/>
+	<Message key="code_serverType_20" value="CardSteerBridge"/>
+	<Message key="code_serverType_3" value="SteerHUB"/>
+	<Message key="code_serverType_4" value="SteerMind"/>
+	<Message key="code_serverType_5" value="SteerDB"/>
+	<Message key="code_serverType_6" value="GAS"/>
+	<Message key="code_serverType_7" value="GlogDB"/>
+	<Message key="code_serverType_8" value="SteerClient"/>
+	<Message key="code_serverType_9" value="SteerCast"/>
+	<Message key="code_serverType_32" value="Dice"/>
+	<Message key="code_userGroupUseFlag_0" value="Unused"/>
+	<Message key="code_userGroupUseFlag_1" value="Used"/>
+	<Message key="code_userState_1" value="Used"/>
+	<Message key="code_userState_0" value="Unused"/>
+	<Message key="code_userState_2" value="Restriction"/>
+</Steer>

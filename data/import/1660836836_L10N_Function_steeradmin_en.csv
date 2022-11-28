@@ -1,0 +1,625 @@
+50331669,Import Server Connect List.,Server connect list
+67108865,Create function.,Add function
+67108866,Configure server type for function calling.,Configure server for function calling
+67108867,Create function group.,Add function group
+67108868,Mapping function to function group.,Connect function group - execute function
+67108869,Create user.,Add user
+67108870,Create user group.,Add user group
+67108871,Mapping user to user group.,Connect user - user group
+67108872,Remove function which belongs to function group.,Disconnect function group - execute function
+67108873,Remove user who belongs to user group.,Disconnect user - user group
+67108874,Modify function.,Modify function information
+67108875,Modify function group.,Modify function group information
+67108876,Modify user.,Modify user information
+67108877,Modify user group.,Modify user group information
+67108878,Modify my information.,Modify my information
+67108879,Import all functions.,Inquire all functions
+67108880,Inquire function list by session.,Executable/castable function list
+67108881,Perform function.,Perform function
+67108882,Check authority for function performing.,Check function performing authority
+67108883,Report after performing function.,Function perform report
+67108884,Inquire record of performing function by session.,Inquire record for performing function
+67108885,Inquire user list.,View user list
+67108886,Inquire user group list.,View user group list
+67108887,Create action log.,Create action log
+67108888,Inquire action log list.,Action log list
+67108889,Inquire user group which has authority to perform function.,Inquire group for execute function 
+67108890,Check authority for cast performing.,Check cast performing authority
+67108891,Inquire currently recorded server status list.,Server status list
+67108892,Record server status.,Record server status
+67108893,Inquire function list by server. For menu.,Inquire function list for menu
+67108894,Inquire individual user information.,Inquire user information
+67108895,Inquire relation between user and user group.,List belongs to user group
+67108896,Inquire relation between function group and function.,List belongs to function group
+67108897,Inquire function group list.,View function group list
+67108898,Inquire individual function.,Function information
+67108899,Gain menu list of available function for users by menu type.,Inquire function list for menu
+67108900,Import calling server configuration.,View calling server configuration
+67108901,Inquire action log that is higher than certain danger level.,Inspect log list
+67108902,Gain menu of available function for users by menu type and list with added data by menu type-function.,Inquire function list for menu
+67108903,Import executable function list.,Executable function list
+67108904,Import castable function list.,Castable function list
+67108905,Import all action log list.,All
+67108906,Import action log list by server category.,By server category
+67108907,Import action log list by period.,By period
+67108908,Import action log list by user.,By user
+67108909,Import action log list by user group.,By user group
+67108910,Import server category list.,Server category list
+67108911,Import display group list.,Display group list
+67108912,Import user group list contains user.,List contains user
+67108913,Import user group list does not contain user.,List which does not contain user
+67108914,Import user list which belongs to user group.,List which belongs to user group
+67108915,Import user list which does not belong to user group.,List which does not belong to user group
+67108916,Import user detail.,User detail
+67108917,Import user group detail.,User group detail
+67108918,Import function detail.,Function detail
+67108919,Import function group detail.,Function group detail
+67108920,Import display group detail.,Display group detail
+67108921,Import function list which contains function.,List which contains function
+67108922,Import function list which does not contain function.,Function group list which does not contain function
+67108923,Import function list which belongs to function group.,List which belongs to function group
+67108924,Import function list which does not belong to function group.,List which does not belong to function group
+67108925,Import display group list which contains function.,Display group list which contains function
+67108926,Import display group list which does not belong to function.,Display group list which does not belong to function
+67108927,Import function list which belongs to display group.,List which belongs to display group
+67108928,Import function list which does not belong to display group.,List which does not belong to display group
+67108929,Disconnect display group and function.,Disconnect display group - function
+67108930,Connect display group and function.,Connect display group - function
+67108931,Import server category detail.,Server category detail
+67108932,Create display group.,Create display group
+67108933,Modify display group.,Modify display group
+67108934,Import action log detail.,Action log detail
+67108935,Import user group list for export.,Export - User group list
+67108936,Import function group list for export.,Export - Function group list
+67108937,Import display group list for export.,Export - Display list
+67108938,Import function list to export.,Export - Function list
+67108939,Connect user group and user.,Connect user group - user
+67108940,Disconnect user group and user.,Disconnect user group - user
+67108941,Connect execute function and function group.,Connect execute function - function group
+67108942,Disconnect execute function and function group.,Disconnect execute function - function group
+67108943,Connect function group and cast function.,Connect function group - cast function
+67108944,Disconnect function group and cast function.,Disconnect function group - cast function
+67108945,Connect cast function and function group.,Connect cast function - function group
+67108946,Disconnect cast function and function group.,Disconnect cast function - function group
+67108947,Connect function and display group.,Connect function - display group
+67108948,Disconnect function and display group.,Disconnect function - display group
+67108949,For import menu,Import
+67108950,For export menu,Export
+67108951,For language data import menu,Import language data
+67108952,For language data export menu,Export language data
+67108953,Import function detail for import.,Function detail for import
+67108954,Import function group detail for import.,Function group detail for import
+67108955,Import user group detail for import.,User group detail for import
+67108956,Perform function import.,Perform function import
+67108957,Perform function group import.,Perform function group import
+67108958,Perform function - function group import.,Perform function - function group import
+67108959,Perform user group import.,Perform user group import
+67108960,Import display group information for export.,Export - import display group
+67108961,Import display group and function list connection information for export.,"Export - import display group function connection information"
+67108962,Import function and function group connection information.,Import function - function group connection information
+67108963,Import display group detail.,Import display group
+67108964,Import function - display group connection.,Import function - display group connection
+67108965,Perform display group import.,Perform display group import
+67108966,Perform function - display group connection import.,Perform function - display group connection import
+67108967,Export function list for L10N process.,Export function list for L10N process
+67108968,Export display group for L10N process.,Export display group for L10N process
+67108969,Import L10N processed function list.,Import L10N processed function list
+67108970,Import L10N processed display group.,Import L10N processed display group
+150994945,Inquire casted list for group which contains user.,Received/entrustable cast list
+150994946,Inquire user created cast list.,Created cast list
+150994947,Inquire user entrusted cast list.,View entrusted cast
+150994948,Inquire entrustable cast list for user.,View entrustable cast
+150994949,Create new cast.,Create cast
+150994950,Cancel cast.,Cancel cast
+150994951,Perform cast's function.,Perform cast function
+150994952,Reject cast.,Reject cast
+150994953,Inquire record of cast function performed.,Processed cast list
+150994954,Entrust cast.,Entrust cast
+150994955,Inquire number of casts to group which contains user.,View number of cast
+150994956,Received/entrustable cast list,Received/entrustable cast list
+150994957,Performed cast list,Performed cast list
+150994958,Rejected cast list,Rejected cast list
+150994959,Import cast list.,Cast list
+150994960,Import list of all cast list.,All cast list
+150994961,Import list of all received cast list.,Received cast list
+150994962,Import list of all performed cast list.,Performed cast list
+150994963,Import list of all rejected cast list.,Rejected cast list
+150994964,Import list of all entrusted cast list.,Entrusted cast list
+167772161,Issue new session.,Issue session
+167772162,Inspect session if it is correct.,Inspect session
+167772163,End session.,End session
+167772164,Gain session information.,Session information
+167772165,Inquire session list.,Inquire session list
+167772166,Check if userID(INT) and password match. Use for password change.,Inspect password
+167772167,Check if session is correct. (No session extension),Inspect session
+184549377,,readPrivileges
+184549378,writePrivileges,writePrivileges
+184549379,Home,Home screen
+184549380,Add achievement,Add achievement
+184549381,Add extraction,Add item extraction
+184549382,Add friend,Add friend
+184549383,Add item,Add item
+184549384,Add recipe,Add recipe
+184549385,Add skill,Add skill
+184549386,Add glyph,Add glyph
+184549387,Add restriction,Add restriction
+184549388,Change crafting skill level,Change crafting proficiency
+184549389,Change skill level,Change proficiency
+184549390,Change money in inventory,Change money in inventory
+184549391,Change money in bank,Change money in bank
+184549392,Delete achievement,Delete achievement
+184549393,Delete extraction,Delete item extraction
+184549394,Delete friend,Delete friend
+184549395,Delete item,Delete item
+184549396,Delete item in bank,Delete item in bank
+184549397,Delete skill,Delete skill
+184549398,Delete glyph,Delete glyph
+184549399,Delete character restriction,Delete restriction
+184549400,Recover deleted character,Recover character
+184549401,Change character name,Change character name
+184549402,Delete item in auction,Delete auction
+184549403,Teleport,Teleport
+184549404,Change server setting,Change server setting
+184549405,Change character level,Change level
+184549406,Change character EXP,Change EXP
+184549407,Server maintenance,Server maintenance
+184549408,Server monitor,Server monitor
+184549409,Server maintenance,Server maintenance
+184549410,Notice management,Notice management
+184549411,Notice management,Notice management
+184549412,Account management menu,Account management
+184549413,Account search,Account search
+184549414,Memo management,Memo management
+184549415,Search character with name changed,Search changed name
+184549416,Search character who changed server,Search changed server
+184549417,Server change management menu,Server change management
+184549418,Server setting management,Server setting management
+184549419,Character management menu,Character management
+184549420,Search character,Inquire character information
+184549421,Item information,Item
+184549422,View character information,Bank
+184549423,View character quest,Quest
+184549424,View character skill,Skill
+184549425,View post information,Post information
+184549426,Brokers,Brokers
+184549427,View pet information,Pet
+184549428,View guild information,Guild
+184549429,View crafting information,Crafting
+184549430,View skill level information,Proficiency
+184549431,View history such as party PvP or PvP,Character history
+184549432,View memo such as account note or restriction,Memo
+184549433,View glyph,Glyph
+184549434,View characters' achievement,Achievement
+184549435,View friend list,Friend
+184549436,View character restriction,Restriction
+184549437,GM character,GM character configuration
+184549438,Restriction,Restriction
+184549439,Restriction,Restriction
+184549440,Account memo,Account memo
+184549441,Account memo,Account memo
+184549442,Account memo,Detailed account memo
+184549443,Item search management,Item management
+184549444,Item template search,Item ID search
+184549445,Item DBID search,Serial ID search
+184549446,Guild management,Guild management
+184549447,Guild search,Guild search
+184549448,Quest management,Quest management
+184549449,Quest search,Quest search
+184549450,Detailed quest information,Quest information
+184549451,Administrator team approval system,Approval
+184549452,View approval list,Approval list
+184549453,View approval details,Approval details
+184549454,Log search,Log search
+184549455,Log search,Log search
+184549456,Member log,Member log
+184549457,Inquire log in with IP,Inquire log in with IP
+184549458,Inquire with logAction,Inquire with logAction
+184549459,Inquire log with logAudit,Inquire Audit log
+184549460,Inquire report,Report
+184549461,Basic report,Basic report
+184549462,Temporary table for test,Test
+184549463,Play time by level/class,Play time
+184549464,Number of NPC hunting by class level,Number of NPC hunting
+184549465,Number of NPC hunting by level,Number of NPC hunting
+184549466,EXP gain from NPC hunting by class level,NPC hunting EXP
+184549467,EXP gain from NPC hunting by level,NPC hunting EXP
+184549468,Usage of skill kind and frequency of skills,Skill usage
+184549469,What item user obtained,Item obtained
+184549470,Character level up time by class,Character level up
+184549471,Character level up time,Character level up
+184549472,Number of NPC deaths,Number of NPC deaths
+184549473,NPC dropped item,NPC dropped item
+184549474,Characters killed by NPCs by class level,Number of deaths by NPCs
+184549475,Characters killed by NPCs by level,Number of deaths by NPCs
+184549476,Characters killed by PCs by class level ,Number of deaths by PCs
+184549477,Characters killed by PCs by level,Number of deaths by PCs
+184549478,What items were used,Item usage
+184549479,Top 100 places where characters are staying,Place where the most characters stay
+184549480,Places where characters are generally staying,Where most characters are
+184549481,Weapon items what most characters equip,Equipped weapon item
+184549482,Armor items what most characters equip,Equipped armor item
+184549483,Popular places for hunting NPCs,NPC hunting spot
+184549484,Top 100 places for hunting NPCs,Popular NPC hunting spot
+184549485,Place for generally gaining EXP,EXP gain spot
+184549486,Top 100 places for gaining most EXP,Popular EXP gaining spot
+184549487,Perform approval,Perform approval
+184549488,Change guild master,Change guild master
+184549489,Delete guild,Delete guild
+184549490,Change guild notice,Change guild notice
+184549491,Change guild level,Change guild level
+184549492,Change guild level expiration,Change guild level expiration
+184549493,Change emblem point,Change emblem point
+184549494,View memo detail,View memo detail
+184549495,View memo detail,View memo detail
+184549496,Notice,Notice
+184549497,Seize item,Seize item
+184549498,Recover seized item,Recover seized item
+184549499,View seized item,View seized item
+184549500,Money earning report,Money earning report
+184549501,Money disappearing report,Money disappearing report
+184549502,Money change amount report,Money change amount report
+184549503,Item value disappearing report,Item value disappearing report
+184549504,Obtained item value report,Obtained item value report
+184549505,Retrieve seized item,Retrieve seized item
+184549506,Add quest,Add quest
+184549507,Modify quest,Modify quest
+184549508,Delete quest,Delete quest
+184549509,Seize shop,Seize shop
+184549510,Shop taken down,Shop taken down
+184549511,Seize gold,Seize gold
+184549512,Retrieve seized gold,Retrieve seized gold
+184549513,Change item value,Change item value
+184549514,Search chat,Search chat
+184549515,Change guild name,Change guild name
+184549516,Add achievement,Add achievement
+184549517,Add item extraction,Add extraction
+184549518,Add friend,Add friend
+184549519,Add item,Add item
+184549520,Add recipe,Add recipe
+184549521,Add skill,Add skill
+184549522,Add glyph,Add glyph
+184549523,Add restriction,Add restriction
+184549524,Change crafting skill level,Change crafting proficiency
+184549525,Change skill level,Change proficiency
+184549526,Change money in inventory,Change money in inventory
+184549527,Change money in bank,Change money in bank
+184549528,Delete achievement,Delete achievement
+184549529,Delete item extraction,Delete extraction
+184549530,Delete friend,Delete friend
+184549531,Delete item,Delete item
+184549532,Delete item in bank,Delete item in bank
+184549533,Delete skill,Delete skill
+184549534,Delete glyph,Delete glyph
+184549535,Delete restriction,Delete character restriction
+184549536,Recover character,Recover deleted character
+184549537,Change character name,Change character name
+184549538,Delete auction,Delete item in auction
+184549539,Teleport,Teleport
+184549540,Change server setting,Change server setting
+184549541,Change level,Change character level
+184549542,Change EXP,Change character EXP
+184549543,Change guild master,Change guild master
+184549544,Delete guild,Change guild master
+184549545,Change guild name,Change guild name
+184549546,Change guild notice,Change guild notice
+184549547,Change guild level,Change guild level
+184549548,Change guild level expiration period,Change guild level expiration period
+184549549,Change emblem point,Change emblem point
+184549550,Seize item,Seize item
+184549551,Retrieve seized item,Retrieve seized item
+184549552,Add quest,Add quest
+184549553,Modify quest,Modify quest
+184549554,Delete quest,Delete quest
+184549555,Seize shop,Seize shop
+184549556,Shop taken down,Shop taken down
+184549557,Seize gold,Seize gold
+184549558,Retrieve seized gold,Retrieve seized gold
+184549559,Can delete all memo,Can delete all memo
+184549560,Can modify all memo,Can modify all memo
+184549561,Concurrent users report,Inquire concurrent users
+184549562,Character creation(class),Number of character created by class
+184549563,Character creation(race),Number of character created by race
+184549564,Character deletion(class),Number of character deleted by class
+184549565,Character deletion(race),Number of character deleted by race
+184549566,Reject approval,Reject approval
+184549567,Search deleted item,Search deleted item
+184549568,Seize package,Seize package
+184549569,Delete seized item,Delete seized item
+184549570,Delete seized gold,Delete seized gold
+184549571,Change guild nickname,Change guild nickname
+184549572,Change guild nickname,Change guild nickname
+184549573,Inquire character creation history,Inquire character creation history
+184549574,Delete guild logo,Delete guild logo
+184549575,Delete guild logo,Delete guild logo
+184549576,Stop territory spawn,Stop territory spawn
+184549577,Stop territory spawn,Stop territory spawn
+184549578,Spawn stop configuration,Spawn stop configuration
+184549579,Inquire spawn stop,Inquire spawn stop
+184549580,Change respawn time,Change respawn time
+184549581,Change respawn time,Change respawn time
+184549582,Change respawn time,Change respawn time
+184549583,NPC management,NPC management
+184549584,Battlefield management,Battlefield management
+184549585,Battlefield search,Battlefield search
+184549586,GM bookmark management,GM bookmark management
+184549587,Dungeon NPC respawn,Dungeon NPC respawn
+184549588,Dungeon NPC respawn,Dungeon NPC respawn
+184549589,Dungeon NPC respawn,Dungeon NPC respawn
+184549590,Dungeon cooltime reset,Dungeon cooltime reset
+184549591,Dungeon cooltime reset,Dungeon cooltime reset
+184549592,Politics system on,Politics system on
+184549593,Politics system on,Politics system on
+184549594,Politics system off,Politics system off
+184549595,Politics system off,Politics system off
+184549596,Delete ClientSetting,Delete ClientSetting
+184549597,Delete ClientSetting,Delete ClientSetting
+184549598,Delete ClientSetting,Delete ClientSetting
+184549599,Dungeon cooltime reset,Dungeon cooltime reset
+184549600,Politics management,Politics management
+184549601,Politics system on/off,Politics system on/off
+184549602,Council information,Council information
+184549603,Vanarch information,Vanarch information
+184549604,Competition information,Competition information
+184549605,Change province notice,Change province notice
+184549606,Change province notice,Change province notice
+184549607,Change owned political point,Change owned political point
+184549608,Change owned political point,Change owned political point
+184549609,Change province tax rate,Change province tax rate
+184549610,Change province tax rate,Change province tax rate
+184549611,Change province policy,Change province policy
+184549612,Change province policy,Change province policy
+184549613,Change candidate's competition point,Change candidate's competition point
+184549614,Change candidate's competition point,Change candidate's competition point
+184549615,Forced vanarch dismissal,Forced vanarch dismissal
+184549616,Forced vanarch dismissal,Forced vanarch dismissal
+184549617,Peruse log,Peruse log
+184549618,User vote record,User vote record
+184549619,Change province tax,Change province tax
+184549620,Change province tax,Change province tax
+184549621,Delete vote record,Delete vote record
+184549622,Delete vote record,Delete vote record
+184549623,Field NPC respawn,Field NPC respawn
+184549624,Change vanarch pledge,Change vanarch pledge
+184549625,Change vanarch pledge,Change vanarch pledge
+184549626,Recover appearance change,Recover appearance change
+184549627,Recover appearance change,Recover appearance change
+184549628,Recover dye,Recover dye
+184549629,Recover dye,Recover dye
+184549630,Change recipe bookmark,Change recipe bookmark
+184549631,Change recipe bookmark,Change recipe bookmark
+184549632,Search appearance change,Search appearance change
+184549633,Battlefiled ranking,Battlefiled ranking
+184549634,Search account in shutdown server,Search account in shutdown server
+184549635,Search name with past name,Search name with past name
+184549636,Search server migration,Search server migration
+184549638,Set world event operation,Set world event operation
+184549639,Set world event operation,Set world event operation
+184549640,Set world event max concurrent objects,Set world event max concurrent objects
+184549641,Set world event max concurrent objects,Set world event max concurrent objects
+184549642,Event management,Event management
+184549643,Event management,Event management
+184549644,Search paid item log,Search paid item log
+184549645,Seize registered item at broker,Seize registered item at broker
+184549646,Seize registered item at broker,Seize registered item at broker
+184549647,,Admin reward
+184549648,,Admin reward
+184549649,Admin reward,Admin reward
+184549650,,Execute reward
+184549651,Reset dungeon entrance count,Reset dungeon entrance count
+184549652,Reset dungeon entrance count,Reset dungeon entrance count
+184549653,Reset dungeon entrance count,Reset dungeon entrance count
+184549654,Reset dungeon entrance count,Reset dungeon entrance count
+184549655,,Change character PK point
+184549656,Modify rest bonus,Modify rest bonus
+184549657,Change character PK point,Change character PK point
+184549658,Change character PK point,Change character PK point
+184549659,Modify rest bonus,Modify rest bonus
+184549660,Modify rest bonus,Modify rest bonus
+184549661,Search trade log,Search trade log
+184549662,Troubleshoot,Troubleshoot
+184549663,(For NHNJ AdminReward accident),Troubleshoot
+184549664,Reset all dungeon count,Reset all dungeon count
+184549665,Reset all dungeon count,Reset all dungeon count
+251658241,View my petition,View my petition
+251658242,View all petition,View all petition
+251658243,View my completed petition,View my completed petition
+251658244,Register template,Register template
+251658245,Inquire template,Inquire template
+251658246,Forced petition,Forced petition
+251658247,All petition,All petition
+251658248,Petitions by server,Petitions by server
+251658249,GM hands petition,GM hands petition
+251658250,Inquire all completed petition,Inquire all completed petition
+251658251,Status for old petition,Status for old petition
+251658252,GM log in status,GM log in status
+251658253,GM handling status,GM handling status
+251658254,Petition distribution configuration,Petition distribution configuration
+251658255,Survey configuration,Survey configuration
+251658256,Card information,Card information
+251658257,Server list,Server list
+251658258,Business start check,Business start check
+251658259,Previous server select list,Previous server select list
+251658260,Consultation start list,Consultation start list
+251658261,GM list and log in information,GM list_and_log in information
+251658262,Start business,Start business
+251658263,End business,End business
+251658264,Card hold,Card hold
+251658265,Lift card hold,Lift card hold
+251658266,Card complete,Card complete
+251658267,Card complete collectively,Card complete collectively
+251658268,Consultation start,Consultation start
+251658269,Consultation end,Consultation end
+251658270,Send message,Send message
+251658271,Chat list,Chat list
+251658272,Last chat list,Last chat list
+251658273,Delete template,Delete template
+251658274,Import card,Import card
+251658275,Create template,Create template
+251658276,Forced petition,Forced petition
+251658277,Number of card distribution,Number of card distribution
+251658278,Card evaluation message,Card evaluation message
+251658279,Set available card creation time.,Available card creation time
+251658280,Import specific GM's last GMSession details.,Previous business information
+251658281,Import specific GM's personalized value.,Configuration
+251658282,Update specific GM's personalized value.,Modify configuration
+251658283,Import GlobalProperty value list.,System configuration
+251658284,Update GlobalProperty value.,Modify system configuration
+251658285,Import GM information list,GM management
+251658286,Create GM information.,Create GM information
+251658287,Update GM information.,Modify GM information
+251658288,Delete GM information.,Delete GM information
+251658289,Import list of server list.,Server management
+251658290,Create server in server list.,Create server list
+251658291,Update server to server list.,Modify server list
+251658292,Delete server in server list.,Delete server list
+251658293,Set Operation Rule.,SetOperationRule
+251658294,Import the number of cards distributed to me.,Card distribution number information
+251658295,Inquire all completed petition,Inquire all completed petition
+251658296,Use GM information,Use GM information
+251658297,Use server list,Use server list
+251658298,Modify template,Modify template
+251658299,Category management,Category management
+251658300,Add category list,Add category list
+251658301,Modify category list,Modify category list
+251658302,Delete category list,Delete category list
+251658303,User category list,User category list
+251658304,Category list,Category list
+251658305,Statistics for completed card by GM,Statistics for completed card by GM
+251658306,Statistics for completed card by server,Statistics for completed card by server
+251658307,Statistics for completed card by server and category,Statistics for completed card by server and category
+251658308,Present situation of reported bad user,Present situation of reported bad user
+251658309,Detail of bad user report,Detail of bad user report
+251658310,Search bad user report,Search bad user report
+268435556,Import box list.,Box list
+268435557,Import box details.,Box details
+268435558,Change box status to Unopened.,Change box status - Unopened
+268435559,Change box status to Opened.,Change box status - Opened
+268435560,Change box status to Tried.,Change box status - Tried
+268435561,Change box status to Used.,Change box status - Used
+268435562,Change box status to Deleted.,Change box status - Deleted
+268435563,Create box.,Create box
+268435564,Create box with preset template.,Create box with template
+268435565,Import box tag list,Box tag list
+268435566,Import box tag details,Box tag details
+268435567,Create box tag.,Create box tag
+268435568,Change box tag to unavailable.,Change box tag to unavailable
+268435569,Change box tag to available.,Change box tag to available
+268435570,Modify box tag.,Modify box tag
+268435571,Import service item list.,Service item list
+268435572,Import service item details.,Service item details
+268435573,Register service item.,Register service item
+268435574,Change service item to unavailable.,Change service item to unavailable
+268435575,Change service item to available.,Change service item to available
+268435576,Modify service item.,Modify service item
+268435577,Import service item tag list.,Service item tag list
+268435578,Import service item tag details.,Service item tag details
+268435579,Register service item tag.,Create service item tag
+268435580,Change service item tag to unavailable.,Change service item tag to unavailable
+268435581,Change service item tag to available.,Change service item tag to available
+268435582,Modify service item tag.,Modify service item tag
+268435583,Import box template list.,Box template list
+268435584,Import box template details.,Box template details
+268435585,Register box template.,Create box template
+268435586,Change box template to unavailable.,Box template unused
+268435587,Change box template to available.,Box template used
+268435588,Modify box template.,Modify box template
+268435589,Import data from file.,Import
+268435590,Export data to file.,Export
+268435591,Export service item tag.,Export service item tag
+268435592,Export box tag.,Export box tag
+268435593,Export service item.,Export service item
+268435594,Export box template.,Export box template
+268435595,Import language data.,Import language data
+268435596,Export language data.,Export language data
+268435611,,Search export log
+318767105,Account Search,Account Search
+318767106,account result list,account result list
+318767107,account SCS result list,account SCS result list
+318767108,account verify form,account verify form
+318767109,account verify action,account verify action
+318767110,Create Account,Create Account
+318767111,account email check action,account email check action
+318767112,account add action,account add action
+318767113,Account Summary,Account Summary
+318767114,Edit Account Profile,Edit Account Profile
+318767115,edit account profile action,edit account profile action
+318767116,Edit Email,Edit Email
+318767117,edit email action,edit email action
+318767118,Edit Secret Q&A,Edit Secret Q&A
+318767119,edit secret qna action,edit secret qna action
+318767120,Reset Password,Reset Password
+318767121,reset password action,reset password action
+318767122,reset password action and send email,reset password action and send email
+318767123,Authenticator Management,Authenticator Management
+318767124,authenticator add form,authenticator add form
+318767125,authenticator add action,authenticator add action
+318767126,authenticator delete form,authenticator delete form
+318767127,authenticator delete action,authenticator delete action
+318767128,Apply Code,Apply Code
+318767129,generate code action,generate code action
+318767130,apply code add action,apply code add action
+318767131,apply code history view,apply code history view
+318767132,Merge Account,Merge Account
+318767133,get gameuser list action,get gameuser list action
+318767134,gameuser merge action,gameuser merge action
+318767135,Edit Game Account Status,Edit Game Account Status
+318767136,detail inven list view,detail inven list view
+318767137,inven delete action,inven delete action
+318767138,get inven list action,get inven list action
+318767139,edit game account status action,edit game account status action
+318767140,Add Free Time,Add Free Time
+318767141,add free time action,add free time action
+318767142,Account Moderation,Account Moderation
+318767143,account moderation cancel action,account moderation cancel action
+318767144,In Game,In Game
+318767145,Event History,Event History
+318767146,event history memo add action,event history memo add action
+318767147,Agent Summary Report,Agent Summary Report
+318767148,Agent Detail Report,Agent Detail Report
+318767149,Edit Tip,Edit Tip
+318767150,edit tip action,edit tip action
+318767151,get tip info action,get tip info action
+318767152,Edit Secret Question,Edit Secret Question
+318767153,secret question add action,secret question add action
+318767154,secret question edit action,secret question edit action
+318767155,Moderation Type Setting,Moderation Type Setting
+318767156,get moderation type list action,get moderation type list action
+318767157,moderation type setting edit action,moderation type setting edit action
+419430401,Publisher List,Publisher List
+419430402,Publisher Add Form,Publisher Add Form
+419430403,Publisher Add Action,Publisher Add Action
+419430404,Publisher Edit Form,Publisher Edit Form
+419430405,Publisher Edit Action,Publisher Edit Action
+419430406,Publisher Contact List,Publisher Contact List
+419430407,Publisher Contact Add Form,Publisher Contact Add Form
+419430408,Publisher Contact Add Action,Publisher Contact Add Action
+419430409,Publisher Contact Edit Form,Publisher Contact Edit Form
+419430410,Publisher Contact Edit Action,Publisher Contact Edit Action
+419430411,Retailer List,Retailer List
+419430412,Retailer Add Form,Retailer Add Form
+419430413,Retailer Add Action,Retailer Add Action
+419430414,Retailer Edit Form,Retailer Edit Form
+419430415,Retailer Edit Action,Retailer Edit Action
+419430416,Request List,Request List
+419430417,Request Add Form,Request Add Form
+419430418,Request Add Action,Request Add Action
+419430419,Request Edit Form,Request Edit Form
+419430420,Request Edit Action,Request Edit Action
+419430421,Request Row add Form,Request Row Add Form
+419430422,Request Row Add,Request Row Add
+419430423,Request Row Edit Form,Request Row Edit Form
+419430424,Request Row Edit Action,Request Row Edit Action
+419430425,Request Approval Request,Request Approval Request
+419430426,Request Approve Request,Request Approve Request
+419430427,Request Reject Request,Request Reject Request
+419430428,Request Generate Keys,Request Generate Keys
+419430429,Request Download Keys,Request Download Keys
+419430430,SKU List,SKU List
+419430431,SKU Add Form,SKU Add Form
+419430432,SKU Add Action,SKU Add Action
+419430433,SKU Edit Form,SKU Edit Form
+419430434,SKU Edit Action,SKU Edit Action
+419430435,Tip Edit Form,Tip Edit
+419430436,Serial Code List,Serial Code List
+419430437,Serial Code view,Serial Code view
+419430438,Tip Save,Tip Save

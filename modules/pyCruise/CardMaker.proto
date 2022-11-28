@@ -1,0 +1,48 @@
+// 카드 생성
+// 1
+message Game2Make_ReqCreateCard {
+    required fixed64 jobID = 1;
+    required fixed64 userSN = 2;
+    required fixed32 characterSN = 3;
+    required bytes characterName = 4;
+    required fixed32 categoryNumber = 5;
+    required bytes cardTitle = 6;
+    required bytes cardBody = 7;
+}
+
+// 2
+message Game2Make_ResCreateCard {
+    required fixed64 jobID = 1;
+    required fixed32 returnCode = 2;
+    optional fixed64 cardID = 3;
+}
+
+// 강제 카드 생성
+// 3
+message Deal2Make_ReqCreateForcedCard {
+    required fixed32 serverID = 1;
+    required fixed32 characterID = 2;
+    required string cardTitle = 3;
+    required string cardBody = 4;
+    required fixed32 GMID = 5;
+}
+
+// 4
+message Deal2Make_ResCreateForcedCard {
+    required fixed32 returnCode = 1;
+    optional fixed64 cardID = 2;
+}
+
+// Caching 데이터 업데이트
+// 5
+message Deal2Make_ReqUpdateCachingData {
+    enum CachingDataType {
+        OperationRule = 1;
+    }
+    required CachingDataType cachingDataType = 1;
+}
+
+// 6
+message Deal2Make_ResUpdateCachingData {
+    required fixed32 returnCode = 1;
+}

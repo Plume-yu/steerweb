@@ -1,0 +1,1382 @@
+// 카드 완료
+message Deal2Game_ReqCompleteCard {
+    required fixed64 cardID = 1;
+    required fixed32 GMID = 2;
+    required bytes cardResult = 3;
+    required bytes evaluationMessage = 4;
+}
+
+message Deal2Game_ResCompleteCard {
+    required fixed64 cardID = 1;
+    required fixed32 returnCode = 2;
+}
+
+// 카드 취소
+message Game2Deal_ReqCancelCard {
+    required fixed64 cardID = 1;
+}
+
+message Game2Deal_ResCancelCard {
+    required fixed64 cardID = 1;
+    required fixed32 returnCode = 2;
+}
+
+// 카드 확인
+message Game2Deal_ReqViewCard {
+    required fixed64 cardID = 1;
+}
+
+message Game2Deal_ResViewCard {
+    required fixed64 cardID = 1;
+    required fixed32 returnCode = 2;
+    required fixed32 cardStateCode = 3;
+    optional bytes cardResult = 4;
+    optional bytes evaluationMessage = 5;
+    optional fixed64 completionTime = 6;
+}
+
+// 상담 시작
+message Deal2Game_ReqStartConversation {
+    required fixed64 cardID = 1;
+}
+
+message Deal2Game_ResStartConversation {
+    required fixed64 cardID = 1;
+    required fixed32 returnCode = 2;
+}
+
+// 상담 종료
+message Deal2Game_ReqEndConversation {
+    required fixed64 cardID = 1;
+}
+
+message Deal2Game_ResEndConversation {
+    required fixed64 cardID = 1;
+    required fixed32 returnCode = 2;
+}
+
+// GM Message 전달
+message Deal2Game_ReqSendGMMessage {
+    required fixed64 cardID = 1;
+    required bytes message = 2;
+}
+
+message Deal2Game_ResSendGMMessage {
+    required fixed64 cardID = 1;
+    required fixed32 returnCode = 2;
+}
+
+// User Message 전달
+message Game2Deal_ReqSendUserMessage {
+    required fixed64 cardID = 1;
+    required bytes message = 2;
+}
+
+message Game2Deal_ResSendUserMessage {
+    required fixed64 cardID = 1;
+    required fixed32 returnCode = 2;
+}
+
+// 카드 평가 전달
+message Game2Deal_NotiEvaluateCard {
+    required fixed64 cardID = 1;
+    required fixed32 score = 2;
+}
+
+// 강제 진정
+message Deal2Game_ReqCreateForcedCard {
+    required fixed64 cardID = 1;
+    required fixed64 userSN = 2;
+    required fixed32 characterSN = 3;
+    required bytes cardTitle = 4;
+    required bytes cardBody = 5;
+}
+
+message Deal2Game_ResCreateForcedCard {
+    required fixed64 cardID = 1;
+    required fixed32 returnCode = 2;
+}
+
+
+
+
+
+
+
+// 업무 시작
+message Web2Deal_ReqStartWork {
+    required fixed32 GMID = 1;
+    required string serverSelectionList = 2;
+}
+
+message Web2Deal_ResStartWork {
+    required fixed32 returnCode = 1;
+}
+
+// 업무 종료
+message Web2Deal_ReqEndWrok {
+    required fixed32 GMID = 1;
+    required string GMIDList = 2;
+}
+
+message Web2Deal_ResEndWork {
+    required fixed32 returnCode = 1;
+}
+
+// 일일 리포트
+message Web2Deal_ReqGetDailyReport {
+    required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetDailyReport {
+    required fixed32 returnCode = 1;
+    required string report = 2;
+}
+
+// 카드 조회
+message Web2Deal_ReqGetPageCard {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    optional string serverID = 3; //For multiple servers
+    optional string categoryString = 4; //For multiple categories
+    optional fixed32 GMID = 5;
+    optional string sort = 6;
+    optional string sortDir = 7;
+}
+
+message Web2Deal_ResGetPageCard {
+    message Card {
+        required fixed64 cardID = 1;
+        required string categoryName = 2;
+        required fixed32 serverID = 3;
+        required fixed32 characterID = 4;
+        required string characterName = 5;
+        required fixed32 cardStateCode = 6;
+        required string creationTime = 7;
+        required fixed32 currentGMID = 8;
+        required string GMNickname = 9;
+        required string cardTitle = 10;
+        required string cardBody = 11;
+        required fixed32 holdFlag = 12;
+        required string serverName = 13;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated Card cards = 2;
+    required fixed32 totalCount = 3;
+}
+
+// 카드 히스토리 조회
+message Web2Deal_ReqGetPageCompletedCard {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    optional string serverID = 3; //For multiple servers
+    optional fixed32 GMID = 4;
+    optional string characterName = 5;
+    optional string sort = 6;
+    optional string sortDir = 7;
+    optional string nickName = 8;
+    optional string serverName = 9;
+    optional string cardTitle = 10;
+    optional string cardBody = 11;
+    optional string cardResult = 12;
+    optional string startCreationTime = 13;
+    optional string endCreationTime = 14;
+    optional string categoryName = 15;
+    optional fixed64 cardID = 16;
+    optional fixed32 cardStateCode = 17;
+    optional fixed32 characterID = 18;
+    optional fixed64 userSN = 19;
+}
+
+message Web2Deal_ResGetPageCompletedCard {
+    message Card {
+        required fixed64 cardID = 1;
+        required string categoryName = 2;
+        required fixed32 serverID = 3;
+        required fixed32 characterID = 4;
+        required string characterName = 5;
+        required fixed32 cardStateCode = 6;
+        required string creationTime = 7;
+        required string completionTime = 8;
+        required fixed32 currentGMID = 9;
+        required string GMNickname = 10;
+        required string cardTitle = 11;
+        required string cardBody = 12;
+        required fixed32 score = 13;
+        required fixed32 holdFlag = 14;
+        required string serverName = 15;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated Card cards = 2;
+    required fixed32 totalCount = 3;
+}
+
+// 카드 상세 조회
+message Web2Deal_ReqGetCard {
+    required fixed64 cardID = 1;
+}
+
+message Web2Deal_ResGetCard {
+    required fixed32 returnCode = 1;
+    
+    message Card {
+        required string categoryName = 1;
+        required fixed64 userSN = 2;
+        required fixed32 serverID = 3;
+        required fixed32 characterID = 4;
+        required string characterName = 5;
+        required fixed32 cardTypeCode = 6;
+        required fixed32 cardStateCode = 7;
+        required string creationTime = 8;
+        required string completionTime = 9;
+        required fixed32 currentGMID = 10;
+        required string GMNickname = 11;
+        required string currentGMIDUpdateTime = 12;
+        required string cardTitle = 13;
+        required string cardBody = 14;
+        required fixed32 creationPathTypeCode = 15;
+        required string cardResult = 16;
+        required fixed32 holdFlag = 17;
+    }
+    
+    optional Card card = 2;
+}
+
+// 히스토리 카드 상세 조회
+message Web2Deal_ReqGetHistoryCard {
+    required fixed64 cardID = 1;
+}
+
+message Web2Deal_ResGetHistoryCard {
+    required fixed32 returnCode = 1;
+    
+    message Card {
+        required string categoryName = 1;
+        required fixed64 userSN = 2;
+        required fixed32 serverID = 3;
+        required fixed32 characterID = 4;
+        required string characterName = 5;
+        required fixed32 cardTypeCode = 6;
+        required fixed32 cardStateCode = 7;
+        required string creationTime = 8;
+        required string completionTime = 9;
+        required fixed32 currentGMID = 10;
+        required string GMNickname = 11;
+        required string currentGMIDUpdateTime = 12;
+        required string cardTitle = 13;
+        required string cardBody = 14;
+        required fixed32 creationPathTypeCode = 15;
+        required string cardResult = 16;
+        required fixed32 holdFlag = 17;
+    }
+    
+    optional Card card = 2;
+}
+
+// 상담 시작
+message Web2Deal_ReqStartConversation {
+    required fixed64 cardID = 1;
+    required fixed32 GMID = 2;
+}
+
+message Web2Deal_ResStartConversation {
+    required fixed32 returnCode = 1;
+}
+
+// 상담 종료
+message Web2Deal_ReqEndConversation {
+    required fixed64 cardID = 1;
+    required fixed32 GMID = 2;
+}
+
+message Web2Deal_ResEndConversation {
+    required fixed32 returnCode = 1;
+}
+
+// GM Message 전달
+message Web2Deal_ReqSendGMMessage {
+    required fixed64 cardID = 1;
+    required string message = 2;
+    required fixed32 GMID = 3;
+}
+
+message Web2Deal_ResSendGMMessage {
+    required fixed32 returnCode = 1;
+}
+
+// 상담 내역 조회
+message Web2Deal_ReqGetListCardConversation {
+    required fixed64 cardID = 1;
+}
+
+message Web2Deal_ResGetListCardConversation {
+    required fixed32 returnCode = 1;
+    
+    message CardConversation {
+    	required fixed64 conversationID = 1;
+        required fixed32 GMID = 2;
+        required string nickName = 3;
+        required string conversationTime = 4;
+        required fixed32 directionTypeCode = 5;
+        required string message = 6;
+    }
+    
+    repeated CardConversation cardConversations = 2;
+}
+
+// 특정 대화 이후 내역 조회
+message Web2Deal_ReqGetLastCardConversation {
+    required fixed64 cardID = 1;
+    required fixed64 lastConversationID = 2;
+}
+
+message Web2Deal_ResGetLastCardConversation {
+    required fixed32 returnCode = 1;
+    
+    message CardConversation {
+    	required fixed64 conversationID = 1;
+        required fixed32 GMID = 2;
+        required string nickName = 3;
+        required string conversationTime = 4;
+        required fixed32 directionTypeCode = 5;
+        required string message = 6;
+    }
+    
+    repeated CardConversation cardConversations = 2;
+}
+
+// 카드 종료
+message Web2Deal_ReqCompleteCard {
+    required fixed64 cardID = 1;
+    required fixed32 GMID = 2;
+    required string cardResult = 3;
+}
+
+message Web2Deal_ResCompleteCard {
+    required fixed32 returnCode = 1;
+}
+
+// 카드 홀드 설정
+message Web2Deal_ReqHoldCard {
+    required fixed64 cardID = 1;
+    required fixed32 GMID = 2;
+}
+
+message Web2Deal_ResHoldCard {
+    required fixed32 returnCode = 1;
+}
+
+// 카드 홀드 해제
+message Web2Deal_ReqReleaseCard {
+    required fixed64 cardID = 1;
+    required fixed32 GMID = 2;
+}
+
+message Web2Deal_ResReleaseCard {
+    required fixed32 returnCode = 1;
+}
+
+// 카드 가져오기
+message Web2Deal_ReqGetAnotherCard {
+    required fixed64 cardID = 1;
+    required fixed32 GMID = 2;
+}
+
+message Web2Deal_ResGetAnotherCard {
+    required fixed32 returnCode = 1;
+}
+
+// 카드 액션 조회
+message Web2Deal_ReqGetListCardAction {
+    required fixed64 cardID = 1;
+}
+
+message Web2Deal_ResGetListCardAction {
+    required fixed32 returnCode = 1;
+    
+    message CardAction {
+        required string GMNickName = 1;
+        required string previousGMNickName = 2;
+        required string actionTime = 3;
+        required fixed32 cardActionTypeCode = 4;
+    }
+    
+    repeated CardAction cardActions = 2;
+}
+
+// 템플릿 생성
+message Web2Deal_ReqCreateGMTemplate {
+    required fixed32 GMID = 1;
+    required fixed32 templateTypeCode = 2;
+    required string templateTitle = 3;
+    required string templateBody = 4;
+}
+
+message Web2Deal_ResCreateGMTemplate {
+    required fixed32 returnCode = 1;
+}
+
+// 템플릿 조회
+message Web2Deal_ReqGetListGMTemplate {
+    required fixed32 GMID = 1;
+    optional fixed32 templateTypeCode = 2;
+    optional string templateTitle = 3;
+    optional string templateBody = 4;
+}
+
+message Web2Deal_ResGetListGMTemplate {
+    required fixed32 returnCode = 1;
+    required fixed32 totalCount = 2;
+    
+    message Template {
+        required fixed32 templateID = 1;
+        required fixed32 templateTypeCode = 2;
+        required string templateTitle = 3;
+        required string templateBody = 4;
+    }
+    
+    repeated Template templates = 3;
+}
+
+// 템플릿 수정
+message Web2Deal_ReqUpdateGMTemplate {
+    required fixed32 templateID = 1;
+    required fixed32 templateTypeCode = 2;
+    required string templateTitle = 3;
+    required string templateBody = 4;
+}
+
+message Web2Deal_ResUpdateGMTemplate {
+    required fixed32 returnCode = 1;
+}
+
+// 템플릿 삭제
+message Web2Deal_ReqDeleteGMTemplate {
+    required fixed32 templateID = 1;
+}
+
+message Web2Deal_ResDeleteGMTemplate {
+    required fixed32 returnCode = 1;
+}
+
+// 분배 개수 조회
+message Web2Deal_ReqGetDistributeCardCount {
+    required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetDistributeCardCount {
+    required fixed32 returnCode = 1;
+    required fixed32 cardCount = 2;
+}
+
+// 분배 개수 세팅
+message Web2Deal_ReqSetDistributeCardCount {
+    required fixed32 GMID = 1;
+    required fixed32 cardCount = 2;
+}
+
+message Web2Deal_ResSetDistributeCardCount {
+    required fixed32 returnCode = 1;
+}
+
+// 평가 문항 조회
+message Web2Deal_ReqGetEvaluationMessage {
+    required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetEvaluationMessage {
+    required fixed32 returnCode = 1;
+    required string evaluationMessage = 2;
+}
+
+// 평가 문항 세팅
+message Web2Deal_ReqSetEvaluationMessage {
+    required fixed32 GMID = 1;
+    required string evaluationMessage = 2;
+}
+
+message Web2Deal_ResSetEvaluationMessage {
+    required fixed32 returnCode = 1;
+}
+
+// GM 로그인 현황 조회
+message Web2Deal_ReqGetListGMLoginStatus {
+}
+
+message Web2Deal_ResGetListGMLoginStatus {
+    required fixed32 returnCode = 1;
+    message LoginStatus {
+        required fixed32 serverSN = 1;
+        required string serverName = 2;
+        optional string gmList = 3;
+        required fixed32 uncompleteCardCount = 4;
+    }
+    repeated LoginStatus loginStatus = 2;
+}
+
+// GM 처리 현황 조회
+message Web2Deal_ReqGetListGMStatus {
+}
+
+message Web2Deal_ResGetListGMStatus {
+    required fixed32 returnCode = 1;
+    message Status {
+        required fixed32 GMID = 1;
+        required string GMNickName = 2;
+        required fixed32 completeCardCount = 3;
+        required fixed32 conversationRatio = 4;
+        required string averageCompleteTime = 5;
+        required fixed32 unfinishCardCount = 6;
+        required string loginServer = 7;
+        required string startWorkTime = 8;
+    }
+    repeated Status GMStatus = 2;
+}
+
+// 서버리스트 조회
+message Web2Deal_ReqGetListServer {
+}
+
+message Web2Deal_ResGetListServer {
+    required fixed32 returnCode = 1;
+    message ServerList {
+        required fixed32 serverSN = 1;
+        required string serverName = 2;
+    }
+    repeated ServerList serverList = 2;
+}
+
+// GM 세션 조회
+message Web2Deal_ReqGetListGMSession {
+    optional fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetListGMSession {
+    required fixed32 returnCode = 1;
+    
+    message Session {
+        required fixed32 GMID = 1;
+        required string lastReceivingTime = 2;
+    }
+    
+    repeated Session GMSession = 2;
+}
+
+// GM 선택 서버 조회
+message Web2Deal_ReqGetListGMServerSelection {
+    optional fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetListGMServerSelection {
+    required fixed32 returnCode = 1;
+    
+    message SelectedServer {
+        required fixed32 GMID = 1;
+        required fixed32 arbiterGWID = 2;
+    }
+    
+    repeated SelectedServer selectedServer = 2;
+}
+
+// 강제 진정 요청
+message Web2Deal_ReqCreateForcedCard {
+    required fixed32 serverID = 1;
+    required fixed32 characterID = 2;
+    required string cardTitle = 3;
+    required string cardBody = 4;
+    required fixed32 GMID = 5;
+}
+
+message Web2Deal_ResCreateForcedCard {
+    required fixed32 returnCode = 1;
+    optional fixed64 cardID = 2;
+}
+
+// 사용 가능 함수 리스트
+message Web2Deal_ReqGetPageDisplayFunction {
+    required bytes sessionKey = 1;
+    required fixed32 displayGroupType = 2;
+}
+
+message Web2Deal_ResGetPageDisplayFunction {
+    required fixed32 returnCode = 1;
+    
+    message Function {
+        required fixed32 displayGroupIDint = 1;
+        required string displayGroupName = 2;
+        required fixed32 globalUniqueFunctionIDint = 3;
+        required string functionName = 4;
+        required string displayName = 5;
+        required fixed32 displayGroupType = 6;
+        required fixed32 dangerLevel = 7;
+        required fixed32 displayOrder = 8;
+        required fixed32 displaySubOrder = 9;
+        optional string displayAdditionalInfo = 10;
+    }
+    
+    repeated Function functions = 2;
+}
+
+// 진행 중인 대화 리스트 요청
+message Web2Deal_ReqGetListStartConversation {
+    required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetListStartConversation {
+    required fixed32 returnCode = 1;
+    
+    message Conversations {
+        required fixed64 cardID = 1;
+        required fixed32 serverID = 2;
+        required fixed32 characterID = 3;
+        required string characterName = 4;
+    }
+    
+    repeated Conversations conversations = 2;
+}
+
+// GM 정보 조회
+message Web2Deal_ReqGetGMInformation {
+    required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetGMInformation {
+    required fixed32 returnCode = 1;
+    required string GMNickName = 2; 
+}
+
+// 모든 GM 및 현재 로그인 중인 GM가져오기
+message Web2Deal_ReqGetListGMandLoginStatus {
+  	optional fixed32 GMID = 1;
+  	optional string nickName = 2;
+}
+
+message Web2Deal_ResGetListGMandLoginStatus {
+    required fixed32 returnCode = 1;
+    
+    message GMList {
+        required fixed32 GMID = 1;
+        required string nickName = 2;
+        required string lastReceivingTime = 3;
+    }
+    
+    repeated GMList gmList = 2;
+}
+
+message Web2Deal_ReqGetCardEvaluationInfo {
+	required fixed64 cardID = 1;
+}
+
+message Web2Deal_ResGetCardEvaluationInfo {
+	required int32 returnCode = 1;
+	required fixed32 score = 2;
+	required string comment = 3;
+}
+
+// 카드 개수 요청
+message Web2Deal_ReqGetCountCardByGMID {
+    required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetCountCardByGMID {
+    required fixed32 returnCode = 1;
+    required fixed32 countMyCard = 2;
+    required fixed32 countSystemCard = 3; 
+}
+
+// Operation Time Rule 정보
+message OperationRule {
+    required fixed32 allDayFlag = 1;
+    required string openTime = 2;
+    required string closeTime = 3;
+    required fixed32 enableFlag = 4;
+}
+
+// Operation Time Rule 요청
+message Web2Deal_ReqGetListOperationRule {
+}
+
+message Web2Deal_ResGetListOperationRule {
+    required fixed32 returnCode = 1;
+    repeated OperationRule operationRules = 2;
+}
+
+// Operation Time Rule 수정 요청
+message Web2Deal_ReqSetOperationRule {
+    repeated OperationRule operationRules = 1;
+}
+
+message Web2Deal_ResSetOperationRule {
+    required fixed32 returnCode = 1;
+}
+
+// 마지막 세션 정보 기록 가져오기
+message Web2Deal_ReqGetLastGMSession {
+    required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetLastGMSession {
+    required fixed32 returnCode = 1;
+    
+    message GMSessions {
+   		required fixed32 GMID = 1;
+        required fixed64 cardID = 2;
+        required string startGMWorkTime = 3;
+        required string endGMWorkTime = 4;
+        required fixed32 totalCardCount = 5;
+        required fixed32 completeCardCount = 6;
+        required fixed32 conversationCount = 7;
+        required fixed32 totalCompleteTime = 8;
+        required string distributeCardGM = 9;
+        required string lastWorkServer = 10;
+    }
+    
+    repeated GMSessions sessionHistory = 2;
+}
+
+// 특정 GM의 개인화 값 가져오기
+message Web2Deal_ReqGetListGMPersonalValue {
+    required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetListGMPersonalValue {
+    required fixed32 returnCode = 1;
+    
+    message GMPersonalValue {
+   		required fixed32 GMID = 1;
+        required fixed32 gmSettingValueID = 2;
+        required string gmSettingValueTypeStr = 3;
+        required string gmSettingValue = 4;
+    }
+    
+    repeated GMPersonalValue personalValue = 2;
+}
+
+// 특정 GM의 개인화 값 업데이트
+message Web2Deal_ReqUpdateGMPersonalValue {
+    required fixed32 GMID = 1;
+    required fixed32 gmSettingValueID = 2;
+    required string gmSettingValue = 3;
+}
+
+message Web2Deal_ResUpdateGMPersonalValue {
+    required fixed32 returnCode = 1;
+}
+
+// GlobalProperty 리스트 가져오기
+message Web2Deal_ReqGetListGlobalPropertyValue {
+}
+
+message Web2Deal_ResGetListGlobalPropertyValue {
+    required fixed32 returnCode = 1;
+    
+    message GlobalPropertyValue {
+   		required fixed32 globalPropertyID = 1;
+        required fixed32 globalPropertyTypeCode = 2;
+        required string globalPropertyValue = 3;
+        required string globalPropertyDescription = 4;
+    }
+    
+    repeated GlobalPropertyValue propertyValue = 2;
+}
+
+// GlobalProperty 값 업데이트
+message Web2Deal_ReqUpdateGlobalPropertyValue {
+	required fixed32 globalPropertyID = 1;
+	required string globalPropertyValue = 2;
+}
+
+message Web2Deal_ResUpdateGlobalPropertyValue {
+    required fixed32 returnCode = 1;
+}
+
+// GM 정보 리스트 가져오기
+message Web2Deal_ReqGetPageGMInformation {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    optional fixed32 GMID = 3;
+    optional string nickName = 4;
+    optional string sort = 5;
+    optional string sortDir = 6;
+}
+
+message Web2Deal_ResGetPageGMInformation {
+    message GMInformation {
+        required fixed32 GMID = 1;
+        required string nickName = 2;
+        required fixed32 enableFlag = 3;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated GMInformation gmInfomation = 2;
+    required fixed32 totalCount = 3;
+}
+
+// GM 정보 리스트 생성
+message Web2Deal_ReqCreateGMInformation {
+	required fixed32 GMID = 1;
+	required string nickName = 2;
+}
+
+message Web2Deal_ResCreateGMInformation {
+    required fixed32 returnCode = 1;
+}
+
+// GM 정보 리스트 수정
+message Web2Deal_ReqUpdateGMInformation {
+	required fixed32 GMID = 1;
+	required string nickName = 2;
+}
+
+message Web2Deal_ResUpdateGMInformation {
+    required fixed32 returnCode = 1;
+}
+
+// GM 정보 리스트 삭제
+message Web2Deal_ReqDeleteGMInformation {
+	required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResDeleteGMInformation {
+    required fixed32 returnCode = 1;
+}
+
+// GM 정보 사용
+message Web2Deal_ReqUseGMInformation {
+	required fixed32 GMID = 1;
+}
+
+message Web2Deal_ResUseGMInformation {
+    required fixed32 returnCode = 1;
+}
+
+// 서버리스트 정보 리스트 가져오기
+message Web2Deal_ReqGetPageServerList {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    optional fixed32 serverSN = 3;
+    optional string serverName = 4;
+    optional string sort = 5;
+    optional string sortDir = 6;
+}
+
+message Web2Deal_ResGetPageServerList {
+    message ServerList {
+        required fixed32 serverSN = 1;
+        required string serverName = 2;
+        required fixed32 enableFlag = 3;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated ServerList serverList = 2;
+    required fixed32 totalCount = 3;
+}
+
+// 서버리스트 정보 리스트 생성
+message Web2Deal_ReqCreateServerList {
+	required fixed32 serverSN = 1;
+	required string serverName = 2;
+}
+
+message Web2Deal_ResCreateServerList {
+    required fixed32 returnCode = 1;
+}
+
+// 서버리스트 정보 리스트 수정
+message Web2Deal_ReqUpdateServerList {
+	required fixed32 serverSN = 1;
+	required string serverName = 2;
+}
+
+message Web2Deal_ResUpdateServerList {
+    required fixed32 returnCode = 1;
+}
+
+// 서버리스트 정보 리스트 삭제
+message Web2Deal_ReqDeleteServerList {
+	required fixed32 serverSN = 1;
+}
+
+message Web2Deal_ResDeleteServerList {
+    required fixed32 returnCode = 1;
+}
+
+// 서버리스트 정보 사용
+message Web2Deal_ReqUseServerList {
+	required fixed32 serverSN = 1;
+}
+
+message Web2Deal_ResUseServerList {
+    required fixed32 returnCode = 1;
+}
+
+// 카테고리 리스트 정보 리스트 가져오기
+message Web2Deal_ReqGetPageCategoryList {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    optional fixed32 categorySN = 3;
+    optional string categoryString = 4;
+    optional string categoryName = 5;
+    optional string sort = 6;
+    optional string sortDir = 7;
+}
+
+message Web2Deal_ResGetPageCategoryList {
+    message CategoryList {
+        required fixed32 categorySN = 1;
+        required string categoryString = 2;
+        required string categoryName = 3;
+        required fixed32 enableFlag = 4;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated CategoryList categoryList = 2;
+    required fixed32 totalCount = 3;
+}
+
+// 카테고리 리스트 정보 리스트 생성
+message Web2Deal_ReqCreateCategoryList {
+	required string categoryString = 1;
+	required string categoryName = 2;
+}
+
+message Web2Deal_ResCreateCategoryList {
+    required fixed32 returnCode = 1;
+    required fixed32 categorySN = 2;
+}
+
+// 카테고리 리스트 정보 리스트 수정
+message Web2Deal_ReqUpdateCategoryList {
+	required fixed32 categorySN = 1;
+	required string categoryString = 2;
+	required string categoryName = 3;
+}
+
+message Web2Deal_ResUpdateCategoryList {
+    required fixed32 returnCode = 1;
+}
+
+// 카테고리 리스트 정보 리스트 삭제
+message Web2Deal_ReqDeleteCategoryList {
+	required fixed32 categorySN = 1;
+}
+
+message Web2Deal_ResDeleteCategoryList {
+    required fixed32 returnCode = 1;
+}
+
+// 카테고리 리스트 정보 사용
+message Web2Deal_ReqUseCategoryList {
+	required fixed32 categorySN = 1;
+}
+
+message Web2Deal_ResUseCategoryList {
+    required fixed32 returnCode = 1;
+}
+
+// GM 선택 카테고리 조회
+message Web2Deal_ReqGetListGMCategorySelection {
+    optional fixed32 GMID = 1;
+}
+
+message Web2Deal_ResGetListGMCategorySelection {
+    required fixed32 returnCode = 1;
+    
+    message SelectedCategory {
+        required fixed32 GMID = 1;
+        required string categoryString = 2;
+    }
+    
+    repeated SelectedCategory selectedCategory = 2;
+}
+
+// 카테고리 리스트 조회
+message Web2Deal_ReqGetListCategory {
+}
+
+message Web2Deal_ResGetListCategory {
+    required fixed32 returnCode = 1;
+    message CategoryList {
+        required fixed32 categorySN = 1;
+        required string categoryString = 2;
+        required string categoryName = 3;
+    }
+    repeated CategoryList categoryList = 2;
+}
+
+// 여기서 부터 통계
+// GM별 처리 카드 정보 가져오기
+message Web2Deal_ReqGetPageCompleteStatisticsByGM {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    required string startDate = 3;
+    required string endDate = 4;
+    optional string sort = 5;
+    optional string sortDir = 6;
+}
+
+message Web2Deal_ResGetPageCompleteStatisticsByGM {
+    message StatDataByGM {
+        required fixed32 currentGMID = 1;
+        required string nickName = 2;
+        required fixed64 minCardID = 3;
+        required fixed64 maxCardID = 4;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated StatDataByGM statDataByGM = 2;
+    required fixed32 totalCount = 3;
+}
+
+// GM별 처리 카드 상세 정보 가져오기
+message Web2Deal_ReqGetPageCompleteStatisticsByGM_Sub {
+    required fixed32 currentGMID = 1;
+   	required fixed64 minCardID = 2;
+   	required fixed64 maxCardID = 3;
+   	required string startDate = 4;
+   	required string endDate = 5;
+}
+
+message Web2Deal_ResGetPageCompleteStatisticsByGM_Sub {
+	required fixed32 returnCode = 1;
+	required fixed32 completedTotalCount = 2;
+	required fixed32 conversationTotalCount = 3;
+	required fixed32 forcedTotalCount = 4;
+	required fixed32 workingTimeTotalSec = 5;
+	required fixed32 avgResponseTimeSec = 6;
+	required fixed32 avgEvaluationScore = 7;
+	required fixed32 evaluationTotalCount = 8;
+	required fixed32 canceledTotalCount = 9;
+}
+
+// 서버 별 처리 카드 정보 가져오기
+message Web2Deal_ReqGetPageCompleteStatisticsByServer {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    required string startDate = 3;
+    required string endDate = 4;
+    optional string sort = 5;
+    optional string sortDir = 6;
+}
+
+message Web2Deal_ResGetPageCompleteStatisticsByServer {
+    message StatDataByServer {
+        required fixed32 arbiterGWID = 1;
+        required string serverName = 2;
+        required fixed64 minCardID = 3;
+        required fixed64 maxCardID = 4;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated StatDataByServer statDataByServer = 2;
+    required fixed32 totalCount = 3;
+}
+
+// 서버 별 처리 카드 상세 정보 가져오기
+message Web2Deal_ReqGetPageCompleteStatisticsByServer_Sub {
+    required fixed32 arbiterGWID = 1;
+   	required fixed64 minCardID = 2;
+   	required fixed64 maxCardID = 3;
+   	required string startDate = 4;
+   	required string endDate = 5;
+}
+
+message Web2Deal_ResGetPageCompleteStatisticsByServer_Sub {
+	required fixed32 returnCode = 1;
+	required fixed32 completedTotalCount = 2;
+	required fixed32 conversationTotalCount = 3;
+	required fixed32 forcedTotalCount = 4;
+	required fixed32 canceledTotalCount = 5;
+}
+
+// 서버 별 처리 카드 정보에서 서버 클릭 시 카테고리 정보 가져오기
+message Web2Deal_ReqGetPageCompleteStatisticsByServerAndCategory {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    required fixed32 arbiterGWID = 3;
+    required string startDate = 4;
+    required string endDate = 5;
+    optional string sort = 6;
+    optional string sortDir = 7;
+}
+
+message Web2Deal_ResGetPageCompleteStatisticsByServerAndCategory {
+    message StatDataByServerAndCategory {
+    	required string categoryName = 1;
+        required string serverName = 2;
+        required fixed32 completedTotalCount = 3;
+        required fixed32 avgResponseTime = 4;
+        required fixed32 avgEvaluationScore = 5;
+        required fixed32 evaluationTotalCount = 6;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated StatDataByServerAndCategory statDataByServerAndCategory = 2;
+    required fixed32 totalCount = 3;
+}
+
+// Abuser Report 현황
+message Web2Deal_ReqGetPageReportAbuseList {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+}
+
+message Web2Deal_ResGetPageReportAbuseList {
+    message ReportData {
+        required string reportTime = 1;
+        required string serverName = 2;
+        required fixed32 arbiterGWID = 3;
+        required fixed32 reporterCharacterSN = 4;
+        required string reporterCharacterName = 5;
+        required fixed64 reporterUserSN = 6;
+        required fixed32 targetCharacterSN = 7;
+        required string targetCharacterName = 8;
+        required fixed64 targetUserSN = 9;
+        required string abuserPosition = 10;
+        required fixed32 characterReportCount = 11;
+        required fixed32 userReportCount = 12;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated ReportData reportData = 2;
+    required fixed32 totalCount = 3;
+}
+
+// Abuser Report 세부 정보 가져오기
+message Web2Deal_ReqGetReportAbuseListDetail {
+    required fixed32 arbiterGWID = 1;
+    required fixed32 targetCharacterSN = 2;
+}
+
+message Web2Deal_ResGetReportAbuseListDetail {
+    message ReportData {
+        required fixed64 reporterUserSN = 1;
+        required fixed32 reporterCharacterSN = 2;
+        required string reporterCharacterName = 3;
+        required string reportTime = 4;
+    }
+    
+    required fixed32 returnCode = 1;
+    required string serverName = 2;
+    required string targetCharacterName = 3;
+    required fixed64 targetUserSN = 4;
+    required string firstReportTime = 5;
+    required string lastReportTime = 6;
+    required string lastAbuserPosition = 7; 
+    repeated ReportData reportData = 8;
+    required fixed32 totalCount = 9;
+}
+
+// Abuser Report 정보 조회
+message Web2Deal_ReqGetPageReportAbuseSearchList {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    optional string serverName = 3;
+    optional string targetCharacterName = 4;
+    optional fixed32 targetUserSN = 5;
+    optional string startDate = 6;
+    optional string endDate = 7;
+    optional string sort = 8;
+    optional string sortDir = 9;
+}
+
+message Web2Deal_ResGetPageReportAbuseSearchList {
+    message ReportData {
+        required string reportTime = 1;
+        required string serverName = 2;
+        required fixed32 arbiterGWID = 3;
+        required fixed32 reporterCharacterSN = 4;
+        required string reporterCharacterName = 5;
+        required fixed64 reporterUserSN = 6;
+        required fixed32 targetCharacterSN = 7;
+        required string targetCharacterName = 8;
+        required fixed64 targetUserSN = 9;
+        required string abuserPosition = 10;
+        required fixed32 characterReportCount = 11;
+        required fixed32 userReportCount = 12;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated ReportData reportData = 2;
+    required fixed32 totalCount = 3;
+}
+
+// Chat Report 현황
+message Web2Deal_ReqGetPageReportChatList {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+}
+
+message Web2Deal_ResGetPageReportChatList {
+    message ReportData {
+        required string reportTime = 1;
+        required string serverName = 2;
+        required fixed32 arbiterGWID = 3;
+        required fixed32 reporterCharacterSN = 4;
+        required string reporterCharacterName = 5;
+        required fixed64 reporterUserSN = 6;
+        required fixed32 targetCharacterSN = 7;
+        required string targetCharacterName = 8;
+        required fixed64 targetUserSN = 9;
+        required string chatLine = 10;
+        required string chatChannelName = 11;
+        required fixed32 characterReportCount = 12;
+        required fixed32 userReportCount = 13;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated ReportData reportData = 2;
+    required fixed32 totalCount = 3;
+}
+
+// Chat Report 세부 정보 가져오기
+message Web2Deal_ReqGetReportChatListDetail {
+    required fixed32 arbiterGWID = 1;
+    required fixed32 targetCharacterSN = 2;
+}
+
+message Web2Deal_ResGetReportChatListDetail {
+    message ReportData {
+        required fixed64 reporterUserSN = 1;
+        required fixed32 reporterCharacterSN = 2;
+        required string reporterCharacterName = 3;
+        required string reportTime = 4;
+    }
+    
+    required fixed32 returnCode = 1;
+    required string serverName = 2;
+    required string targetCharacterName = 3;
+    required fixed64 targetUserSN = 4;
+    required string firstReportTime = 5;
+    required string lastReportTime = 6;
+    required string chatLine = 7;
+    required string chatChannelName = 8;
+    repeated ReportData reportData = 9;
+    required fixed32 totalCount = 10;
+}
+
+// Chat Report 정보 조회
+message Web2Deal_ReqGetPageReportChatSearchList {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    optional string serverName = 3;
+    optional string targetCharacterName = 4;
+    optional fixed32 targetUserSN = 5;
+    optional string startDate = 6;
+    optional string endDate = 7;
+    optional string sort = 8;
+    optional string sortDir = 9;
+}
+
+message Web2Deal_ResGetPageReportChatSearchList {
+    message ReportData {
+        required string reportTime = 1;
+        required string serverName = 2;
+        required fixed32 arbiterGWID = 3;
+        required fixed32 reporterCharacterSN = 4;
+        required string reporterCharacterName = 5;
+        required fixed64 reporterUserSN = 6;
+        required fixed32 targetCharacterSN = 7;
+        required string targetCharacterName = 8;
+        required fixed64 targetUserSN = 9;
+        required string chatLine = 10;
+        required string chatChannelName = 11;
+        required fixed32 characterReportCount = 12;
+        required fixed32 userReportCount = 13;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated ReportData reportData = 2;
+    required fixed32 totalCount = 3;
+}
+
+// Parcel Report 현황
+message Web2Deal_ReqGetPageReportParcelList {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+}
+
+message Web2Deal_ResGetPageReportParcelList {
+    message ReportData {
+        required string reportTime = 1;
+        required string serverName = 2;
+        required fixed32 arbiterGWID = 3;
+        required fixed32 reporterCharacterSN = 4;
+        required string reporterCharacterName = 5;
+        required fixed64 reporterUserSN = 6;
+        required fixed32 targetCharacterSN = 7;
+        required string targetCharacterName = 8;
+        required fixed64 targetUserSN = 9;
+        required string parcelMessage = 10;
+        required string enclosures = 11;
+        required fixed32 characterReportCount = 12;
+        required fixed32 userReportCount = 13;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated ReportData reportData = 2;
+    required fixed32 totalCount = 3;
+}
+
+// Parcel Report 세부 정보 가져오기
+message Web2Deal_ReqGetReportParcelListDetail {
+    required fixed32 arbiterGWID = 1;
+    required fixed32 targetCharacterSN = 2;
+}
+
+message Web2Deal_ResGetReportParcelListDetail {
+    message ReportData {
+        required fixed64 reporterUserSN = 1;
+        required fixed32 reporterCharacterSN = 2;
+        required string reporterCharacterName = 3;
+        required string reportTime = 4;
+    }
+    
+    required fixed32 returnCode = 1;
+    required string serverName = 2;
+    required string targetCharacterName = 3;
+    required fixed64 targetUserSN = 4;
+    required string firstReportTime = 5;
+    required string lastReportTime = 6;
+    required string parcelMessage = 7;
+    required string enclosures = 8;
+    repeated ReportData reportData = 9;
+    required fixed32 totalCount = 10;
+}
+
+// Parcel Report 정보 조회
+message Web2Deal_ReqGetPageReportParcelSearchList {
+    required fixed32 rowOffset = 1;
+    required fixed32 rowCount = 2;
+    optional string serverName = 3;
+    optional string targetCharacterName = 4;
+    optional fixed32 targetUserSN = 5;
+    optional string startDate = 6;
+    optional string endDate = 7;
+    optional string sort = 8;
+    optional string sortDir = 9;
+}
+
+message Web2Deal_ResGetPageReportParcelSearchList {
+    message ReportData {
+        required string reportTime = 1;
+        required string serverName = 2;
+        required fixed32 arbiterGWID = 3;
+        required fixed32 reporterCharacterSN = 4;
+        required string reporterCharacterName = 5;
+        required fixed64 reporterUserSN = 6;
+        required fixed32 targetCharacterSN = 7;
+        required string targetCharacterName = 8;
+        required fixed64 targetUserSN = 9;
+        required string parcelMessage = 10;
+        required string enclosures = 11;
+        required fixed32 characterReportCount = 12;
+        required fixed32 userReportCount = 13;
+    }
+    
+    required fixed32 returnCode = 1;
+    repeated ReportData reportData = 2;
+    required fixed32 totalCount = 3;
+}

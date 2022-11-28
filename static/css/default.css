@@ -1,0 +1,565 @@
+<style type='text/css'>
+<!--
+	body
+	{
+		font-family: Malgun Gothic, '돋음', Dotum, Baekmuk Dotum, Undotum, Apple Gothic, Latin font, sans-serif; 
+	}
+	div, span, p, table, tr, td, input, select, option
+	{
+		 font-size: 9pt;
+		 font-family: Malgun Gothic, Baekmuk Dotum, '돋음', Dotum, Undotum, Apple Gothic, Latin font, sans-serif; 
+	}
+	.bd
+	{
+		text-align: left;
+	}
+	a
+	{
+		text-decoration: none;
+	}
+	
+	.imeDisabled
+	{
+		IME-MODE:disabled;
+	}
+	
+	.linkLogin
+	{
+		text-decoration: none;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size:12px;
+	}
+	
+	.loginNoticeDIV
+	{
+		font-size:9pt;
+		padding: 10px 10px 20px 10px;
+		height: 137px;
+		overflow: auto;
+	}
+	
+	.logo
+	{
+		text-decoration: none;
+		color: #FFFFFF;
+		font-family: Arial;
+		font-weight: bold;
+		font-size:30px;
+		font-style:italic;
+		padding-left: 20px;
+	}
+	
+	.userName
+	{
+		color:#FFFFFF;
+	}
+	
+	.tbHeader 
+	{
+		vertical-align:middle;
+		width: 800px;
+	}
+	
+	.tbMainHeader
+	{
+		width: 100%;
+		background-image:url('../images/top_C.gif');
+		height: 66px;
+	}
+	
+	.tdHeaderRight
+	{
+		padding: 10px 10px 10px 10px;
+		text-align: right;
+	}
+	
+	.tdHeaderLeft
+	{
+		width: 500px;
+		text-align: left;
+	}
+	
+	.loginStatusDiv
+	{
+		border: solid 1px;
+	}
+	
+	.AccountInfoDiv
+	{
+		color: #FFFFFF;
+		font-weight: bold;
+	}
+
+	.ServerSelectionDiv
+	{
+		color: #FFFFFF;
+		font-weight: bold;
+	}
+	
+	.logoutTable
+	{
+	}
+	
+	.logoutTableTD
+	{
+		padding-left: 20px;
+	}
+	
+	.tdFooterCenter
+	{
+		padding-top: 2px;
+		height: 40px;
+		background-image:url('../images/bt_c.gif');
+		text-align: center;
+	}
+	
+	.tbBottom 
+	{
+		width: 100%;
+		text-align:center;
+		font-size:11px;
+		color: #FFFFFF;
+	}
+	
+	.smallText
+	{
+		font-size: 11px;
+	}
+	.verySmallText
+	{
+		font-size: 9px;
+	}
+	
+	.versionText
+	{
+		color: #777777;
+		font-size: 9px;
+	}
+	
+	.divActionPageContents
+	{
+		padding: 20px;
+	}
+	.tbInput
+	{
+		width: 100%;
+	}
+	
+	.tdInputLabel
+	{
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+	}
+	
+	.tdInputIndividual
+	{
+		text-align: left;
+	}
+
+	.checkBox
+	{
+		width: 30px;
+	}
+	
+	.txtInputTiny
+	{
+		width: 20px;
+	}
+	
+	.txtInputVerySmall
+	{
+		width: 80px;
+	}
+
+	.txtInputSmall
+	{
+		width: 150px;
+	}
+	
+	.txtInputNormal
+	{
+		width: 250px;
+	}
+	
+	.txtInputBig
+	{
+		width: 400px;
+	}
+	
+	.txtInputGiant
+	{
+		width: 600px;
+	}
+	
+	.textareaGiant
+	{
+		width: 600px;
+		height: 300px;
+	}
+	
+	.textareaSmallHeight
+	{
+		width: 600px;
+		height: 80px;
+	}
+	
+	.txtInputVeryBig
+	{
+		width: 700px;
+	}
+	.createTable
+	{
+		margin-top: 10px;
+	}
+	
+	.createLabel
+	{
+		width: 100px;
+		padding-right: 10px;
+		text-align: right;
+		font-weight: bold;
+		font-size: 10pt;	
+	}
+	
+	.templateCreateBtnDIV
+	{
+		border: solid 2px;
+		width: 500px;
+		text-align: right;
+	}
+
+	.btnSubmitNormal
+	{
+		width: 150px;
+		height: 25px;
+	}
+	
+	.btnSubmitBig
+	{
+		width: 150px;
+		height: 40px;
+	}
+	
+	.login_tbMainHeader
+	{
+		width: 800px;
+		margin-top: 100px;
+		border: 2px groove #CCCCCC;
+	}
+	
+	.login_tdHeader
+	{
+		height: 66px;
+		text-align: left;
+		background-image:url('../images/top_C.gif');
+	}
+	
+	.login_tdCenter
+	{
+		padding: 10px 10px 10px 10px;
+		vertical-align: top;
+	}
+	
+	.login_tdCenterLeft
+	{
+		padding: 10px 0px 20px 10px;
+		vertical-align: top;
+	}
+	
+	.login_tdCenterRight
+	{
+		padding: 10px 10px 20px 0px;
+		width: 300px;
+		text-align: right;
+		vertical-align: top;
+	}
+	
+	.loginCenterDiv
+	{
+		padding: 10px 10px 10px 10px;
+	}
+	
+	.workingCenterDiv
+	{
+		padding: 10px 10px 0px 10px;
+	}
+	
+	.workingCenterBtnDiv
+	{
+		padding: 10px 10px 30px 10px;
+	}
+	
+	.saveServerSelection
+	{
+		margin-right: 30px;
+	}
+	
+	.login_tdFooter
+	{
+	}
+	
+	#loginBottom
+	{
+		border: solid 0px;
+		border-top: 2px groove #CCCCCC;
+		padding-right: 5px;
+		text-align: right;
+		font-weight: bold;
+		font-size: 8pt;
+	}
+	
+	.login_tdCenterTop
+	{
+		text-align: right;
+	}
+	
+	.setting_label_td
+	{
+		padding-bottom: 5px;
+		padding-right: 5px;
+		text-align: right;
+	}
+	.setting_td
+	{
+		padding-bottom: 5px;
+	}
+	
+	.loginResul_td
+	{
+		padding-top: 5px;
+		width: 200px;
+	}
+	
+	.searchTable
+	{
+		margin-left: 10px;
+		height: 35px;
+	}
+	
+	.searchTableTD
+	{
+		padding-right: 3px;
+	}
+	
+	.dropdownList
+	{
+		width: 100px;
+		height: 20px;
+		background-color: #FFFFFF;
+	}
+	
+	.categoryStatus
+	{
+		padding-top: 5px;
+		padding-left: 10px;
+		font-weight: bold;
+	}
+	
+	.loadingParentDiv
+	{
+		padding: 10px 10px 10px 10px;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+	}
+	.loadingDiv
+	{
+		padding-bottom: 5px;
+	}
+	
+	.selectFieldset
+	{
+		text-align: left;
+		padding: 0px 10px 10px 10px;
+	}
+
+	.PaneNameArea
+	{
+		padding: 5px 0px 5px 10px;
+		border-bottom: 2px groove #CCCCCC;
+		font-weight: bold;
+		font-size: 18px;
+		text-align: left;
+	}
+	
+	.ImportPaneNameArea
+	{
+		padding: 5px 0px 15px 10px;
+		font-weight: bold;
+		font-size: 18px;
+		text-align: left;
+	}
+	
+	.DataListAction
+	{
+		border-bottom: 2px groove #CCCCCC;
+	}
+	
+	.DataListSection
+	{
+		padding-right: 2px;
+	}
+	
+	.ManipulationSection
+	{
+		padding-right: 2px;
+	}
+	
+	.DataHandlerActionSection
+	{
+		border-bottom: 2px groove #CCCCCC;
+	}
+	
+	.PaneDefaultDiv
+	{
+		padding: 10px 10px 10px 10px;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+	}
+	.InnerLoadingDiv
+	{
+		padding-top: 100px;
+		padding-bottom: 100px;
+		text-align: center;
+		width: 100%;
+	}
+	.ManipulationSection
+	{
+		border-bottom: 2px groove #CCCCCC;
+	}
+	.BoxInfoTable
+	{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.BoxInfoTR
+	{
+	}
+	.BoxInfoTD
+	{
+		padding: 10px 5px 5px 20px;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+	}
+	.BoxInputLabelTD
+	{
+		padding: 10px 5px 5px 20px;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+	}
+	.BoxInputTD
+	{
+		padding: 10px 5px 5px 20px;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+	}
+	
+    #calendarButtonPicker button {
+        background: url(../images/calendar_icon.gif) center center no-repeat;
+        text-align: left;
+        text-indent: -20em;
+        overflow: hidden;
+        *margin-left: 10em; /* For IE */
+        *padding: 0 3em;    /* For IE */
+        white-space: nowrap;
+    }
+    
+    .NormalTab
+    {
+    	height: 100%;
+    }
+    
+    .ExportAddButton
+    {
+    	padding-right: 10px;
+    }
+    
+    .ExportTab
+    {
+    	height: 100%;
+    }
+    
+    .ExportSelectionDiv
+    {
+    	padding: 10px;
+    }
+    
+    .ExportSectionTextDiv
+    {
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+    }
+    
+    .downloadTitle
+    {
+    	padding-top: 5px;
+    	padding-bottom: 10px;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+    }
+    
+    .downloadText
+    {
+    	padding-left: 10px;
+    	padding-bottom: 2px;
+		font-size: 12px;
+    }
+    
+    .downloadSubTitle
+    {
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+    }
+    
+    .ImportLeftDiv
+    {
+    	padding-right: 2px;
+    }
+    
+    .fileSelectDesc
+    {
+    	font-weight: bold;
+		font-size: 12px;
+		padding-bottom: 10px;
+    }
+    
+    .fileSelectButton
+    {
+    	position: absolute;
+    	width: 65px;
+    	height: 25px;
+    }
+    
+    .fileSelectButtonBack
+    {
+    	width: 60px;
+    	height: 20px;
+		font-weight: bold;
+		padding: 5px 5px 5px 5px;
+		border: 2px groove #CCCCCC;
+		background:  #DDDDDD;
+    }
+    
+    .fileInfo
+    {
+    	padding-top: 20px;
+    }
+    
+    .analyzeResultDiv
+    {
+    	padding: 20px 20px 20px 20px;
+    }
+-->
+</style>

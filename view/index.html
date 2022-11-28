@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{=T.accepted_language or 'ko'}}">
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<title id='productTitle'>Steer System</title>
+	<style type="text/css">
+	body {
+		margin:0;
+		padding:0;
+	}
+	</style>
+	
+	<!-- # YUI Script -->
+    <link rel="stylesheet" type="text/css" href="static/jsCruise/build/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/jsCruise/build/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/jsCruise/build/fonts/fonts-min.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/menu/assets/skins/sam/menu.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/resize/assets/skins/sam/resize.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/layout/assets/skins/sam/layout.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/logger/assets/skins/sam/logger.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/paginator/assets/skins/sam/paginator.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/datatable/assets/skins/sam/datatable.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/reset-fonts-grids/reset-fonts-grids.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/treeview/assets/skins/sam/treeview.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/button/assets/skins/sam/button.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/tabview/assets/skins/sam/tabview.css" />
+	<link rel="stylesheet" type="text/css" href="static/jsCruise/build/container/assets/skins/sam/container.css" />
+
+	<script type="text/javascript" src="static/jsCruise/build/yuiloader/yuiloader.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/utilities/utilities.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/container/container_core-min.js"></script> 
+	<script type="text/javascript" src="static/jsCruise/build/menu/menu-min.js"></script> 
+	<script type="text/javascript" src="static/jsCruise/build/resize/resize-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/layout/layout-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/logger/logger-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/connection/connection-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/dragdrop/dragdrop-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/element/element-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/button/button-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/animation/animation-min.js"></script> 	
+	<script type="text/javascript" src="static/jsCruise/build/container/container-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/json/json-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/tabview/tabview-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/paginator/paginator-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/datasource/datasource-min.js"></script>
+	<script type="text/javascript" src="static/jsCruise/build/datatable/datatable-min.js"></script>
+	
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opAjaxRequest.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opLoader.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opLog.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opDataTable.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opLayout.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opMenu.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opMenuBar.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opMessageBox.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opTemplate.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opDialog.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opEvent.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opTimer.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opOverlayManager.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opButtons.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opResourceManager.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opValidation.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opTabView.js'></script>
+	<script type='text/javascript' src='static/jsCruise/opAjaxLib/opGlobal.js'></script>
+	
+	<script type='text/javascript' src='static/js/steerStatic.js'></script>
+	<script type='text/javascript' src='static/js/steerError.js'></script>
+	<script type='text/javascript' src='static/js/steerGlobal.js'></script>
+	<script type='text/javascript' src='static/js/steerLogin.js'></script>
+	
+	<link rel="stylesheet" type="text/css" href="static/css/default.css">
+
+    <style type="text/css">
+	    fieldset {
+	        border: 2px groove #FFF;
+	        margin: .5em;
+	        padding: .5em;
+	       	text-align: left;
+	    }
+	    legend {
+	    	padding-left: .5em;
+	    	padding-right: .5em;
+	    }
+    </style>
+</head>
+
+<body class="yui-skin-sam">
+<div id="loginBase">
+	<table class='login_tbMainHeader' align="center" cellpadding='0' cellspacing='0'>
+	<tr>
+		<td class='login_tdHeader' colspan=2>
+			<span class='logo'>STEER</span>&nbsp;<font id='releaseName' class='smallText' color='#FFFFFF'></font>
+		</td>
+	</tr>
+	<tr>
+		<td class='login_tdCenterLeft'>
+			<div id="loginCenter">
+			<fieldset style="padding: 10px 10px 10px 10px;"> 
+	       		<legend><B><span id="login_noticeSpan"></span></B></legend>
+				<div id="noticeSpan" class="loginNoticeDIV"></div>
+			</fieldset>
+			</div>
+		</td>
+		<td class='login_tdCenterRight'>
+			<fieldset style="padding: 10px 20px 10px 10px;"> 
+	       		<legend><B><span id="login_loginSpan"></span></B></legend>
+				<table align="right">
+				<tr>
+					<td class="setting_label_td"><label for="id_input" id="id_input_label">ID</label> </td>
+					<td class="setting_td"><input type="text" id="id_input" name="userID" class="txtInputSmall" maxlength=50 onkeyup="CruiseGlobal.ExtractASCIIValue(this)" onblur="CruiseGlobal.ExtractASCIIValue(this)" ></td>
+				</tr>
+				<tr>
+					<td class="setting_label_td"><label for="password_input" id="password_input_label">Password</label> </td>
+					<td class="setting_td"><input type="password" id="password_input" name="password" class="txtInputSmall" maxlength=50></td>
+				</tr>
+				<tr>
+					<td class="setting_label_td"></td>
+					<td class="setting_td"><div id="LoginButton"></div></td>
+				</tr>
+				<tr>
+					<td class="loginResul_td"" colspan="2"><div id="loginResultDiv"></div></td>
+				</tr>
+				</table>
+			</fieldset>
+			<fieldset style="padding: 10px 20px 10px 10px;"> 
+	       		<legend><B><span id="login_settingSpan"></span></B></legend>
+				<table align="right">
+				<tr>
+					<td class="setting_label_td"><label for="SaveIDPWD" id="saveIDPWD_label"><span id="saveAccountInfo"></span></label></td>
+					<td class="setting_td"><span id="SaveIDPWD"></span></td>
+				</tr>
+				<tr>
+					<td class="setting_label_td"><label for="ForAdminOn" id="adminMode_label"><span id="adminMode"></span></label></td>
+					<td class="setting_td"><span id="ForAdmin"></span></td>
+				</tr>				
+				</table>
+			</fieldset>
+		</td>
+	</tr>
+	<tr>
+		<td class='login_tdFooter' colspan=2>
+			<div id="loginBottom" class="yuimenubar">
+				Version: <span id='version'></span>
+			</div>
+		</td>
+	</tr>		
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+// Platform Team Operation Part Common Standard Protocol ver 4.3
+package op;
+
+option java_package = "op.protocol";
+option java_outer_classname = "OpMsgProtos";
+
+message OpMsg {
+    enum JobType {
+        REQUEST = 1;
+        RESPONSE = 2;
+        NOTICE = 3;
+    }
+    
+    enum ExecType {
+        EXECUTE = 1;
+        CAST = 2;
+    }
+    
+    optional fixed32 sender_gusid = 1;
+    optional fixed32 receiver_gusid = 2;
+    optional JobType job_type = 3;
+    optional fixed64 job_id = 4;
+    optional fixed32 gufid = 5;
+    optional ExecType exec_type = 6;
+    optional fixed32 cast_target_user_group_sn = 7; // Only for cast
+    optional bytes session_key = 8; // 128bit hex string
+ 
+    // arguments for execution
+    message Argument {
+      optional bytes name = 1;
+      required bytes value = 2;
+    }
+    repeated Argument arguments = 9;
+    
+    // return code
+    optional fixed32 result_code = 10;
+    
+    // result scalar
+    // using a single result value
+    optional bytes result_scalar = 11;
+    
+    // result set
+    // using a table form result, support multi result set
+    message ResultSet {
+       repeated bytes column_names = 1;
+       
+       message Row {
+           repeated bytes values = 1;
+       }
+       repeated Row rows = 2;
+       optional fixed32 total_count = 3;
+    }
+    repeated ResultSet result_sets = 12;
+    
+    // for blob data
+    optional bytes blob = 13;
+}

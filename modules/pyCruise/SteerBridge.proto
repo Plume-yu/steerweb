@@ -1,0 +1,99 @@
+// 스티어 로그인
+message ReqSteerLogin {
+    required string id = 1;
+    required string password = 2;
+    required string clientIP = 3;
+    optional string additionalInfo = 4;
+    optional string	serviceName = 5;
+    optional int32	allowMultipleLoginFlag = 6;
+}
+
+message ResSteerLogin {
+    required int32 returnCode = 1;
+    
+    message SteerSession {
+        required bytes sessionKey = 1;
+        required int32 userSN = 2;
+    }
+    
+    optional SteerSession steerSession = 2;
+}
+
+// 스티어 로그아웃
+message ReqSteerLogout {
+    required bytes sessionKey = 1;
+}
+
+message ResSteerLogout {
+    required int32 returnCode = 1;
+}
+
+// 세션 첵크
+message ReqSteerCheckSession {
+    required bytes sessionKey = 1;
+    required string clientIP = 2;
+    optional string additionalInfo = 3;
+}
+
+message ResSteerCheckSession {
+    required int32 returnCode = 1;
+    required bytes sessionKey = 2;
+}
+
+// 파라미터 기본 형식
+message Parameter {
+    optional bytes name = 1;
+    required bytes value = 2;
+}
+
+// 사용 가능 함수 리스트
+message ReqGetPageDisplayFunction {
+    required bytes sessionKey = 1;
+    required int32 displayGroupType = 2;
+    required string serviceName = 3;
+}
+
+message ResGetPageDisplayFunction {
+    required int32 returnCode = 1;
+    
+    message Function {
+        required int32 displayGroupIDint = 1;
+        required string displayGroupName = 2;
+        required int32 globalUniqueFunctionIDint = 3;
+        required string functionName = 4;
+        required string displayName = 5;
+        required int32 displayGroupType = 6;
+        required int32 dangerLevel = 7;
+        required int32 displayOrder = 8;
+        required int32 displaySubOrder = 9;
+        optional string displayAdditionalInfo = 10;
+    }
+    
+    repeated Function functions = 2;
+}
+
+// 함수 수행 권한 첵크
+message ReqCheckFunctionExecutionPrivilege {
+	required bytes sessionKey = 1;
+    required int32 GUFID = 2;
+    required string executeArguments = 3;
+}
+
+message ResCheckFunctionExecutionPrivilege {
+	required int32 returnCode = 1;
+	required int32 transactionID = 2;
+}
+
+// 함수 수행 결과 알림
+message NotiFunctionExecutionResult {
+    enum ExecutionResult {
+        fail = 0;
+        success = 1;
+    }
+    
+    required bytes sessionKey = 1;
+    required int32 transactionID = 2;
+    required ExecutionResult executionResult = 3;
+    required string result = 4;
+    required string executeComment = 5;
+}
